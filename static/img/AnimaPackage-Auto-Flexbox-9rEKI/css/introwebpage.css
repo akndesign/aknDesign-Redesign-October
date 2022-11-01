@@ -1,0 +1,598 @@
+/* screen - introwebpage */
+
+.introwebpage {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  height: 4658px;
+  min-width: 1920px;
+  overflow-x: hidden;
+}
+
+.introwebpage .overlap-group2 {
+  height: 4816px;
+  margin-left: -1308px;
+  position: relative;
+  width: 4427px;
+}
+
+.introwebpage .overlap-group1 {
+  height: 4816px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 4427px;
+}
+
+.introwebpage .rectangle {
+  height: 4816px;
+  left: 1308px;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.introwebpage .flower {
+  height: 339px;
+  left: 2613px;
+  position: absolute;
+  top: 669px;
+  width: 451px;
+}
+
+.introwebpage .g_-misfits_30082019_-shot_7_403 {
+  align-items: flex-start;
+  border-radius: 40px;
+  display: flex;
+  gap: 2px;
+  height: 774px;
+  left: 1415px;
+  overflow: hidden;
+  position: absolute;
+  top: 2762px;
+  width: 1216px;
+}
+
+.introwebpage .rectangle-1 {
+  align-self: flex-end;
+  background-color: var(--vermilion);
+  height: 783px;
+  margin-bottom: -517px;
+  margin-left: -1237px;
+  opacity: 0.85;
+  width: 1216px;
+}
+
+.introwebpage .g_-misfits_30082019_-shot_7_403-1 {
+  height: 836px;
+  margin-top: -50px;
+  width: 1254px;
+}
+
+.introwebpage .citymapper_-vancouver_final_highres {
+  align-items: flex-end;
+  background-color: #ff4501d9;
+  border: 1px solid;
+  border-color: #969696d9;
+  border-radius: 60px;
+  display: flex;
+  height: 671px;
+  left: 2323px;
+  overflow: hidden;
+  padding: 0 132px;
+  position: absolute;
+  top: 3820px;
+  width: 864px;
+}
+
+.introwebpage .citymapper_-vancouver_final_highres-1 {
+  height: 746px;
+  margin-bottom: -97px;
+  margin-left: 58px;
+  width: 542px;
+}
+
+.introwebpage .citymapper_-vancouver_final_highres-2 {
+  background-color: #ff450180;
+  border: 1px solid;
+  border-color: #96969680;
+  border-radius: 36px;
+  height: 774px;
+  left: 1415px;
+  position: absolute;
+  top: 2762px;
+  width: 1216px;
+}
+
+.introwebpage .rectangle-2 {
+  background-color: var(--vermilion);
+  border: 1px solid;
+  border-color: #969696;
+  height: 774px;
+  left: 1308px;
+  position: absolute;
+  top: 1061px;
+  width: 1920px;
+}
+
+.introwebpage .path-2 {
+  height: 560px;
+  left: 1892px;
+  opacity: 0.43;
+  position: absolute;
+  top: 1114px;
+  width: 813px;
+}
+
+.introwebpage .read {
+  color: var(--vermilion);
+  font-family: var(--font-family-cheee-jimbo);
+  font-size: 48px;
+  font-weight: 500;
+  left: 2705px;
+  letter-spacing: 0;
+  line-height: 61px;
+  position: absolute;
+  top: 3432px;
+  width: 374px;
+}
+
+.introwebpage .recent-work-recent-w {
+  color: var(--vermilion);
+  font-family: var(--font-family-cheee-jimbo);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 500;
+  left: 1318px;
+  letter-spacing: 0;
+  line-height: 158px;
+  position: absolute;
+  top: 2516px;
+  width: 3109px;
+}
+
+.introwebpage .line {
+  height: 26px;
+  left: 1388px;
+  position: absolute;
+  top: 3628px;
+  width: 1800px;
+}
+
+.introwebpage .flower-1 {
+  background-image: url(../img/intro-web-page-flower-2808E544-9B00-495D-AE58-86C9F2C17A54@2x.png);
+  background-size: 100% 100%;
+  height: 83px;
+  left: 2247px;
+  position: absolute;
+  top: 2564px;
+  transform: rotate(-10deg);
+  width: 125px;
+}
+
+.introwebpage .image-1 {
+  height: 165px;
+  left: 1451px;
+  position: absolute;
+  top: 2810px;
+  width: 165px;
+}
+
+.introwebpage .works-by-alexander-n {
+  color: var(--vermilion);
+  font-family: var(--font-family-gteestidisplaytrial-md);
+  font-size: 76px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: -1.00px;
+  line-height: 88px;
+  position: absolute;
+  top: 2619px;
+  width: 1565px;
+}
+
+.introwebpage .rectangle-3 {
+  border: 6px solid;
+  border-color: var(--vermilion);
+  height: 189px;
+  left: 1278px;
+  position: absolute;
+  top: 2511px;
+  width: 2063px;
+}
+
+.introwebpage .group-3 {
+  background-image: url(../img/intro-web-page-group-3-42B8AF90-D0F3-442E-AAF4-C6975BFEE745@2x.png);
+  background-size: 100% 100%;
+  height: 193px;
+  left: 2787px;
+  position: absolute;
+  top: 3476px;
+  transform: rotate(90deg);
+  width: 190px;
+}
+
+.introwebpage .fill-1 {
+  height: 46px;
+  left: 2857px;
+  position: absolute;
+  top: 3443px;
+  transform: rotate(90deg);
+  width: 45px;
+}
+
+.introwebpage .fill-1-1 {
+  height: 19px;
+  left: 2918px;
+  position: absolute;
+  top: 3457px;
+  transform: rotate(90deg);
+  width: 6px;
+}
+
+.introwebpage .line-1 {
+  height: 2px;
+  left: 1848px;
+  position: absolute;
+  top: 1856px;
+  width: 1266px;
+}
+
+.introwebpage .line-2 {
+  height: 4px;
+  left: 1848px;
+  position: absolute;
+  top: 2018px;
+  width: 1264px;
+}
+
+.introwebpage .line-3 {
+  height: 3px;
+  left: 1848px;
+  position: absolute;
+  top: 2182px;
+  width: 1264px;
+}
+
+.introwebpage .line-4 {
+  height: 3px;
+  left: 1848px;
+  position: absolute;
+  top: 2344px;
+  width: 1264px;
+}
+
+.introwebpage .howdy-im-alexander {
+  color: var(--vermilion);
+  font-family: var(--font-family-gtalpinatrial-condensedmediumitalic);
+  font-size: 123px;
+  font-style: italic;
+  font-weight: 500;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 140px;
+  opacity: 0.61;
+  position: absolute;
+  top: 2425px;
+  width: 1566px;
+}
+
+.introwebpage .group-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 53px;
+  height: 80px;
+  left: 1352px;
+  min-width: 898px;
+  position: absolute;
+  top: 54px;
+}
+
+.introwebpage .akndesign_logo_white_retina-01 {
+  background-image: url(../img/intro-web-page-combined-shape-CBAD9C43-00D9-43A5-B52A-FE86FA4B2FF7@2x.png);
+  background-size: 100% 100%;
+  height: 79px;
+  width: 151px;
+}
+
+.introwebpage .group {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  min-width: 694px;
+}
+
+.introwebpage .x904am {
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  line-height: 73px;
+  min-height: 73px;
+  min-width: 89px;
+  white-space: nowrap;
+}
+
+.introwebpage .boston-ma-usa {
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  line-height: 73px;
+  margin-left: 116px;
+  min-height: 73px;
+  white-space: nowrap;
+  width: 191px;
+}
+
+.introwebpage .overlap-group {
+  height: 73px;
+  margin-left: 107px;
+  position: relative;
+  width: 191px;
+}
+
+.introwebpage .email-me {
+  font-weight: 500;
+  left: 46px;
+  letter-spacing: -0.33px;
+  line-height: 73px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 110px;
+}
+
+.introwebpage .rectangle-4 {
+  border: 3px solid;
+  border-color: var(--vermilion);
+  border-radius: 33.5px;
+  height: 67px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 191px;
+}
+
+.introwebpage .group-7 {
+  align-items: flex-start;
+  display: flex;
+  gap: 34px;
+  height: 1062px;
+  left: 3102px;
+  min-width: 90px;
+  position: absolute;
+  top: 0;
+}
+
+.introwebpage .line-2-1 {
+  height: 1063px;
+  margin-top: -0.5px;
+  width: 2px;
+}
+
+.flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 246px;
+  margin-top: 68px;
+  min-height: 626px;
+  width: 54px;
+}
+
+.introwebpage .hamburger {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 2px;
+  min-height: 53px;
+  width: 52px;
+}
+
+.introwebpage .path {
+  height: 11px;
+  width: 52px;
+}
+
+.introwebpage .group-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  min-height: 327px;
+  padding: 0 1px;
+  width: 54px;
+}
+
+.introwebpage .bitmap {
+  height: 54px;
+  margin-right: 1.0px;
+  margin-top: -1px;
+  transform: rotate(90deg);
+  width: 51px;
+}
+
+.introwebpage .group-5 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.0px;
+  min-height: 209px;
+  width: 9px;
+}
+
+.introwebpage .oval-1 {
+  background-color: var(--vermilion);
+  border-radius: 9px;
+  height: 9px;
+  width: 9px;
+}
+
+.introwebpage .oval {
+  background-color: var(--vermilion);
+  border-radius: 9px;
+  height: 9px;
+  margin-top: 58px;
+  width: 9px;
+}
+
+.introwebpage .oval-2 {
+  background-color: var(--vermilion);
+  border-radius: 9px;
+  height: 9px;
+  margin-top: 57px;
+  width: 9px;
+}
+
+.introwebpage .line-3-1 {
+  height: 2px;
+  left: 1956px;
+  position: absolute;
+  top: 96px;
+  width: 81px;
+}
+
+.introwebpage .line-3-2 {
+  height: 2px;
+  left: 1662px;
+  position: absolute;
+  top: 96px;
+  width: 81px;
+}
+
+.introwebpage .i-design-code-and-d {
+  color: var(--vermilion);
+  font-family: var(--font-family-gtalpinatrial-regular);
+  font-size: var(--font-size-xxl);
+  left: 1556px;
+  letter-spacing: 0;
+  line-height: 81px;
+  position: absolute;
+  top: 457px;
+  width: 1075px;
+}
+
+.introwebpage .howdy-im-alexander-1 {
+  font-weight: 500;
+  left: 1556px;
+  letter-spacing: -1.24px;
+  line-height: 73px;
+  position: absolute;
+  top: 280px;
+  width: 1282px;
+}
+
+.introwebpage .misfits-is-a-new-sta {
+  color: var(--vermilion);
+  font-family: var(--font-family-gtalpinatrial-light);
+  font-size: var(--font-size-m);
+  font-weight: 300;
+  left: 2705px;
+  letter-spacing: 0;
+  line-height: 58px;
+  position: absolute;
+  top: 3005px;
+  width: 813px;
+}
+
+.introwebpage .my-client-based-work {
+  color: #fff7f1;
+  font-family: var(--font-family-neuemontreal-regular);
+  font-size: var(--font-size-xl);
+  left: 1602px;
+  letter-spacing: 0;
+  line-height: 71px;
+  position: absolute;
+  top: 1180px;
+  width: 1335px;
+}
+
+.introwebpage .misfits-a-new-stacki {
+  font-weight: 500;
+  left: 2708px;
+  letter-spacing: -1.24px;
+  line-height: 73px;
+  position: absolute;
+  top: 2780px;
+  width: 1179px;
+}
+
+.introwebpage .citymapper-is-a-publ {
+  color: var(--vermilion);
+  font-family: var(--font-family-gtalpinatrial-light);
+  font-size: var(--font-size-m);
+  font-weight: 300;
+  left: 1415px;
+  letter-spacing: 0;
+  line-height: 58px;
+  position: absolute;
+  top: 3987px;
+  width: 851px;
+}
+
+.introwebpage .citymapper-vancouver {
+  font-weight: 500;
+  left: 1418px;
+  letter-spacing: -1.24px;
+  line-height: 73px;
+  position: absolute;
+  top: 3762px;
+  width: 1179px;
+}
+
+.introwebpage .itv-studios-how-to {
+  font-weight: 500;
+  left: 1849px;
+  letter-spacing: -0.72px;
+  line-height: 73px;
+  position: absolute;
+  top: 2042px;
+  white-space: nowrap;
+  width: 1081px;
+}
+
+.introwebpage .now-play-this-at-som {
+  font-weight: 500;
+  left: 1849px;
+  letter-spacing: -0.72px;
+  line-height: 73px;
+  position: absolute;
+  top: 2205px;
+  white-space: nowrap;
+  width: 1081px;
+}
+
+.introwebpage .london-design-festiv {
+  font-weight: 500;
+  left: 1849px;
+  letter-spacing: -0.72px;
+  line-height: 73px;
+  position: absolute;
+  top: 2369px;
+  white-space: nowrap;
+  width: 1081px;
+}
+
+.introwebpage .financial-grant-for {
+  font-weight: 500;
+  left: 1849px;
+  letter-spacing: -0.72px;
+  line-height: 73px;
+  position: absolute;
+  top: 1879px;
+  white-space: nowrap;
+  width: 1081px;
+}
+
+.introwebpage .awards-and-press {
+  color: var(--vermilion);
+  font-family: var(--font-family-gtalpinatrial-mediumitalic);
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 500;
+  left: 1398px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 1894px;
+  white-space: nowrap;
+}
+
+

@@ -1,0 +1,237 @@
+*{
+box-sizing: border-box
+}
+
+a{ 
+    text-decoration: none;
+}
+
+.about {
+    font-family: Helvetica, sans-serif;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.about:hover .char {
+    display: inline-block;
+    animation: jump .4s linear infinite alternate;
+    animation-delay: calc( -.8s + ( var(--char-index)*.1s ) );
+    animation-timing-function: ease-in-out;
+}
+
+.about:hover .char:nth-of-type(odd) {
+    display: inline-block;
+    animation: jump-reverse .4s linear infinite alternate;
+    animation-delay: calc( -.8s + ( var(--char-index)*.1s ) );
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes jump { 
+    0% {
+      transform:translateY(0);
+    }
+    
+    100% {
+      transform: translate(0%, -8%) rotate(4deg);
+    }
+  }
+
+@keyframes jump-reverse { 
+  0% {
+    transform:translateY(0);
+  }
+  
+  100% {
+    transform: translate(0%, 8%) rotate(-4deg);
+  }
+}
+
+
+#vertical-nav {
+position: fixed;
+right: 0;
+top: 0;
+z-index: 10;
+width: 75px;
+height: 100vh;
+border-left: 2px solid var(--vermilion);
+background-color: #f0f8ff
+}
+
+.flex-col {
+align-items: center;
+display: flex;
+flex-direction: column;
+gap: 246px;
+margin: 68px auto;
+min-height: 626px;
+width: 54px
+}
+.pacman {
+width: 3rem;
+height: 3rem;
+border-radius: 100%;
+align-self: center;
+animation: infinite pacman-walk var(--animation-duration) var(--animation-easing);
+animation-play-state: paused;
+rotate: 180deg
+}
+
+.pacman:hover {
+content: "";
+display: block;
+background: var(--vermilion);
+clip-path: polygon(50% 50%, 80% 0, 100% 0, 100% 100%, 0 100%, 0 0, 20% 0);
+border-radius: 100%;
+animation: infinite chomp-chomp-chomp 250ms linear paused
+}
+
+.pacman:after {
+content: "";
+display: block;
+height: 100%;
+width: 100%;
+background: var(--vermilion);
+clip-path: polygon(50% 50%, 80% 0, 100% 0, 100% 100%, 0 100%, 0 0, 20% 0);
+border-radius: 100%;
+animation: infinite chomp-chomp-chomp 250ms linear paused
+}
+
+@keyframes chomp-chomp-chomp {
+0% {
+    clip-path: polygon(50% 50%, 100% 0, 100% 0, 100% 100%, 0 100%, 0 0, 0 0)
+}
+
+50% {
+    clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0)
+}
+}
+
+@keyframes shake-rectangle-02 {
+0% {
+    transform: translate(0, 14px) rotate(-7deg)
+}
+
+33% {
+    transform: translate(-3px, 14px) rotate(-9deg)
+}
+
+66% {
+    transform: translate(-5px, 16px) rotate(-7deg)
+}
+
+100% {
+    transform: translate(-5px, 14px) rotate(-9deg)
+}
+}
+
+.nav {
+max-width: 40%;
+display: flex;
+vertical-align: middle;
+justify-content: space-between;
+gap: 20px
+}
+
+.hamburger {
+align-items: flex-start;
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-left: 2px;
+min-height: 53px;
+width: 52px
+}
+
+.path {
+height: 10px;
+margin: 0 auto
+}
+
+.pacman-nav-group {
+align-items: flex-start;
+display: flex;
+flex-direction: column;
+margin-left: 1px;
+min-height: 209px;
+width: 9px
+}
+
+.oval {
+background: 0 0;
+color: var(--color-light);
+cursor: pointer
+}
+
+.group-6 {
+align-items: center;
+display: flex;
+flex-direction: column;
+gap: 65px;
+min-height: 327px;
+padding: 0 1px;
+width: 54px
+}
+
+.pacman-nav-group:focus,
+.pacman-nav-group:hover {
+outline: 0;
+animation-play-state: running
+}
+
+.pacman-nav-group:focus .pacman,
+.pacman-nav-group:focus .pacman:after,
+.pacman-nav-group:hover .pacman-nav-group:hover .pacman,
+.pacman-nav-group:hover .pacman:after {
+animation-play-state: running
+}
+
+.oval:active {
+color: var(--color-accent)
+}
+
+.oval {
+background-color: var(--vermilion);
+border-radius: 9px;
+height: 9px;
+margin-top: 58px;
+width: 9px
+}
+
+.menu-drawer {
+transition: .4s right;
+position: fixed;
+height: 100%;
+width: 50vw;
+min-width: 480px;
+top: 0;
+padding-top: 2em;
+right: 75px;
+z-index: 3;
+overflow: scroll;
+background-color: #ffdfd3;
+padding: 50px
+}
+
+.hide-menu {
+    right: -50vw;
+}
+
+.thin-line {
+height: 1px;
+width: 100%;
+background: var(--vermilion);
+margin: 50px 0 50px 0
+}
+
+.external-link-arrow {
+height: 25px;
+margin-left: 5px
+}
+
+.external-link {
+text-decoration: none;
+display: inline;
+border-bottom: 2px solid var(--vermilion)
+}
+

@@ -1,0 +1,69 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/62e771bf59945711598255fa.62e771c06291d45f1e524a06.9nkg41y.hcp.png");
+
+@font-face {
+  font-family: "GTAlpinaTrial-MediumItalic";
+  font-style: italic;
+  font-weight: 1 1000;
+  src: url("fonts/GT-Alpina-Standard-Medium-Italic-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Cheee-Jimbo";
+  font-weight: 1 1000;
+  src: url("fonts/.45264.otf") format("opentype");
+}
+@font-face {
+  font-family: "GTAlpinaTrial-Regular";
+  font-weight: 1 1000;
+  src: url("fonts/GT-Alpina-Standard-Regular-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "GTEestiDisplayTrial-Md";
+  font-weight: 1 1000;
+  src: url("fonts/GT-Eesti-Display-Medium-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "NeueMontreal-Medium";
+  font-weight: 500;
+  src: url("fonts/NeueMontreal-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "GTAlpinaTrial-CondensedMediumItalic";
+  font-style: italic;
+  font-weight: 1 1000;
+  src: url("fonts/GT-Alpina-Condensed-Medium-Italic-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "GTAlpinaTrial-Light";
+  font-weight: 1 1000;
+  src: url("fonts/GT-Alpina-Standard-Light-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "NeueMontreal-Regular";
+  font-weight: 400;
+  src: url("fonts/NeueMontreal-Regular.otf") format("opentype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}

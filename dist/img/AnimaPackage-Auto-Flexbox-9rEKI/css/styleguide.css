@@ -1,0 +1,43 @@
+:root { 
+  --vermilion: #ff4501;
+ 
+  --font-size-l: 55px;
+  --font-size-m: 51px;
+  --font-size-s: 25px;
+  --font-size-xl: 59px;
+  --font-size-xxl: 71.1px;
+  --font-size-xxxl: 94px;
+  --font-size-xxxxl: 124px;
+ 
+  --font-family-cheee-jimbo: "Cheee-Jimbo", Helvetica;
+  --font-family-gtalpinatrial-condensedmediumitalic: "GTAlpinaTrial-CondensedMediumItalic", Helvetica;
+  --font-family-gtalpinatrial-light: "GTAlpinaTrial-Light", Helvetica;
+  --font-family-gtalpinatrial-mediumitalic: "GTAlpinaTrial-MediumItalic", Helvetica;
+  --font-family-gtalpinatrial-regular: "GTAlpinaTrial-Regular", Helvetica;
+  --font-family-gteestidisplaytrial-md: "GTEestiDisplayTrial-Md", Helvetica;
+  --font-family-neuemontreal-medium: "NeueMontreal-Medium", Helvetica;
+  --font-family-neuemontreal-regular: "NeueMontreal-Regular", Helvetica;
+}
+.neuemontreal-medium-vermilion-55px {
+  color: var(--vermilion);
+  font-family: var(--font-family-neuemontreal-medium);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.neuemontreal-medium-vermilion-25px {
+  color: var(--vermilion);
+  font-family: var(--font-family-neuemontreal-medium);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.neuemontreal-medium-vermilion-94px {
+  color: var(--vermilion);
+  font-family: var(--font-family-neuemontreal-medium);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 500;
+}

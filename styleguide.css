@@ -1,0 +1,77 @@
+:root { 
+  --provincial-pink: #fff7f1;
+  --vermilion: #ff4501;
+ 
+  --font-size-l: 59px;
+  --font-size-m: 51px;
+  --font-size-xs: 31px;
+  --font-size-s: 48px;
+  --font-size-xl: 63px;
+  --font-size-xxl: 94px;
+  --font-size-xxxl: 123px;
+  --font-size-xxxxl: 124px;
+ 
+  --font-family-cheee-jimbo: "Cheee-Jimbo", Helvetica;
+  --font-family-gtalpinatrial-bolditalic: "GTAlpinaTrial-BoldItalic", Helvetica;
+  --font-family-gtalpinatrial-condensedmediumitalic: "GTAlpinaTrial-CondensedMediumItalic", Helvetica;
+  --font-family-gtalpinatrial-light: "GTAlpinaTrial-Light", Helvetica;
+  --font-family-gtalpinatrial-mediumitalic: "GTAlpinaTrial-MediumItalic", Helvetica;
+  --font-family-gteestidisplaytrial-md: "GTEestiDisplayTrial-Md", Helvetica;
+  --font-family-neuemontreal-medium: "NeueMontreal-Medium", Helvetica;
+  --font-family-neuemontreal-regular: "NeueMontreal-Regular", Helvetica;
+}
+.neuemontreal-medium-vermilion-63px {
+  color: var(--vermilion);
+  font-family: var(--font-family-neuemontreal-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.neuemontreal-medium-vermilion-25px {
+  color: var(--vermilion);
+  font-family: var(--font-family-neuemontreal-medium);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.neuemontreal-medium-vermilion-41px {
+  color: var(--vermilion);
+  font-family: var(--font-family-neuemontreal-medium);
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.neuemontreal-medium-vermilion-94px {
+  color: var(--vermilion);
+  font-family: var(--font-family-neuemontreal-medium);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.gtalpinatrial-light-vermilion-51px {
+  color: var(--vermilion);
+  font-family: var(--font-family-gtalpinatrial-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.gtalpinatrial-condensedmediumitalic-medium-vermilion-123px {
+  color: var(--vermilion);
+  font-family: var(--font-family-gtalpinatrial-condensedmediumitalic);
+  font-size: var(--font-size-xxxl);
+  font-style: italic;
+  font-weight: 500;
+}
+ 
+.cheee-jimbo-medium-vermilion-124px {
+  color: var(--vermilion);
+  font-family: var(--font-family-cheee-jimbo);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
