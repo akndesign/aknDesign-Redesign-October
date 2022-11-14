@@ -3,15 +3,17 @@
 }
 
 
-.introwebpage {
+.introwebpage, #about, #awards {
   align-items: flex-start;
-  background-color: aliceblue;
   display: flex;
   height: 110vh;
-  max-width: 100vw;;
-  overflow-x: hidden;
+  max-width: 96vw;
+  overflow: hidden;
+  border-radius: 30px;
 }
-
+.introwebpage, #recentwork {
+background-color: var(--pale-blue);
+}
 .overlap-group3 {
   height: 4816px;
   left: 0;
@@ -43,6 +45,7 @@
   animation: jump .4s linear infinite alternate;
   animation-delay: calc( -.8s + ( var(--char-index)*.1s ) );
   animation-timing-function: ease-in-out;
+  transition: transform 1s; 
 }
 
 .hi-its-alexander-n-1:hover .char:nth-of-type(odd) {
@@ -50,17 +53,16 @@
   animation: jump-reverse .4s linear infinite alternate;
   animation-delay: calc( -.8s + ( var(--char-index)*.1s ) );
   animation-timing-function: ease-in-out;
+  transition: transform 1s; 
 }
 
 
-
-
 .col-top {
-  width: 100%;
-  height: 20px;
+  max-width: 96vw;
+  height: 200px;
   display: block;
-  background-color: aliceblue;
-
+  background-color: red;
+  border-radius: 20px 20px 0px 20px;
 }
 
 .col2 {
@@ -69,6 +71,7 @@
   display: flex;
   flex-direction: column;
 }
+
 
  .localtime {
   font-weight: 500;
@@ -86,9 +89,27 @@
 }
 
 
-.breathing {
+.breathing:hover {
+  -webkit-animation: spin 20s linear reverse infinite;
+  animation: spin 20s linear reverse infinite;
+  /*
   -webkit-animation: breathing 5s ease-out infinite normal;
-  animation: breathing 5s ease-out infinite normal;
+  animation: breathing 5s ease-out infinite normal;*/
+}
+
+@keyframes spin {
+  from {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .tick {
@@ -466,22 +487,26 @@
 
 .i-design-code-and-u {
   font-weight: 300;
-  left: 0;
   letter-spacing: 0;
-  line-height: 58px;
-  top: 0;
-  opacity: 0;
-  width: 60%;
-  animation: fadeIn forwards;
-  animation-duration: 1s;
-  animation-delay: 1s;
+  margin: 0;
+	line-height: 1.25;
+	overflow: hidden;
+	flex: none;
+  text-align: center;
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
- /* 50% { color: aqua; }*/
-  100% { opacity: 1; 
-   }
+.i-design-code-and-u .char {
+  animation: slide-in .6s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(3ms * var(--char-index) + 1000ms );
+}
+
+
+@keyframes slide-in {
+  from {
+    transform: translateY(1.5em);
+    opacity: 0;
+    
+  }
 }
 
 .recent-flower-group {
@@ -493,16 +518,19 @@
 
 
 .flower-group {
-  height: 272px;
+  height: 150px;
 }
 
-.flower {
-  background-size: 100% 100%;
-  height: 272px;
-  left: 984px;
-  top: 700px;
-  transform: rotate(20deg);
-  width: 410px;
+.flower-group img {
+  position: relative;
+  width: 210px;
+}
+
+.flower-2 {
+  width: 200px;
+  height: 175px;
+  margin: 0px 60px 0px 60px;
+  fill: var(--vermilion);
 }
 
 .ready-to-hire {
@@ -526,17 +554,6 @@
   position: absolute;
   top: 274px;
   width: 2534px;
-}
-
-#vertical-nav                                   {
-  position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 10;
-    width: 75px;
-    height: 100vh;
-    border-left: 2px solid var(--vermilion);
-    background-color: aliceblue;
 }
 
 #one {
@@ -568,17 +585,6 @@
   width: 1566px;
 }
 
-.g_-misfits_30082019_-shot_7_403 {
-  align-items: flex-start;
-  border-radius: 40px;
-  display: flex;
-  height: 774px;
-  left: 1415px;
-  overflow: hidden;
-  position: absolute;
-  top: 2762px;
-  width: 1216px;
-}
 
 .rectangle-1 {
   align-self: flex-end;
@@ -590,139 +596,6 @@
   width: 1216px;
 }
 
-.g_-misfits_30082019_-shot_7_403-1 {
-  height: 836px;
-  margin-left: 2px;
-  margin-top: -50px;
-  width: 1254px;
-}
-
-.citymapper_-vancouver_final_highres {
-  align-items: flex-end;
-  background-color: #ff4501d9;
-  border: 1px solid;
-  border-color: #969696d9;
-  border-radius: 60px;
-  display: flex;
-  height: 671px;
-  left: 2323px;
-  overflow: hidden;
-  padding: 0 132px;
-  position: absolute;
-  top: 3820px;
-  width: 864px;
-}
-
-.citymapper_-vancouver_final_highres-1 {
-  height: 746px;
-  margin-bottom: -97px;
-  margin-left: 58px;
-  width: 542px;
-}
-
-.citymapper_-vancouver_final_highres-2 {
-  background-color: #ff450180;
-  border: 1px solid;
-  border-color: #96969680;
-  border-radius: 36px;
-  height: 774px;
-  left: 1415px;
-  position: absolute;
-  top: 2762px;
-  width: 1216px;
-}
-
-.rectangle-2 {
-  background-color: var(--vermilion);
-  border: 1px solid;
-  border-color: #969696;
-  height: 774px;
-width: 100%;
-}
-
-.path-2 {
-  height: 560px;
-  left: 1892px;
-  opacity: 0.43;
-  position: absolute;
-  top: 1114px;
-  width: 813px;
-}
-
-.read {
-  color: var(--vermilion);
-  font-family: var(--font-family-cheee-jimbo);
-  font-size: var(--font-size-s);
-  font-weight: 500;
-  left: 2705px;
-  letter-spacing: 0;
-  line-height: 61px;
-  position: absolute;
-  top: 3432px;
-  width: 374px;
-}
-
-.recent-work-recent-w {
-  color: var(--vermilion);
-  font-family: var(--font-family-cheee-jimbo);
-  font-size: var(--font-size-xxxxl);
-  font-weight: 500;
-  left: 1318px;
-  letter-spacing: 0;
-  line-height: 158px;
-  position: absolute;
-  top: 2516px;
-  width: 3109px;
-}
-
-.line-2 {
-  height: 26px;
-  left: 1388px;
-  position: absolute;
-  top: 3628px;
-  width: 1800px;
-}
-
-.flower-1 {
-  background-size: 100% 100%;
-  height: 83px;
-  left: 2247px;
-  position: absolute;
-  top: 2564px;
-  transform: rotate(-10deg);
-  width: 125px;
-}
-
-.image-1 {
-  height: 165px;
-  left: 1451px;
-  position: absolute;
-  top: 2810px;
-  width: 165px;
-}
-
-.works-by-alexander-n {
-  color: var(--vermilion);
-  font-family: var(--font-family-gteestidisplaytrial-md);
-  font-size: 76px;
-  font-weight: 500;
-  left: 0;
-  letter-spacing: -1.00px;
-  line-height: 88px;
-  position: absolute;
-  top: 2619px;
-  width: 1565px;
-}
-
-.rectangle-3 {
-  border: 6px solid;
-  border-color: var(--vermilion);
-  height: 189px;
-  left: 1278px;
-  position: absolute;
-  top: 2511px;
-  width: 2063px;
-}
 
 .group-3 {
   background-size: 100% 100%;
@@ -803,15 +676,6 @@ width: 100%;
   width: 1232px;
 } */
 
-.misfits-is-a-new-sta {
-  font-weight: 300;
-  left: 2705px;
-  letter-spacing: 0;
-  line-height: 58px;
-  position: absolute;
-  top: 3005px;
-  width: 813px;
-}
 
 .my-client-based-work {
   color: var(--provincial-pink);
@@ -822,22 +686,11 @@ width: 100%;
   line-height: 71px;
 }
 
-.misfits-a-new-stacki {
-  font-weight: 500;
-  left: 2708px;
-  letter-spacing: -1.24px;
-  line-height: 73px;
-  position: absolute;
-  top: 2780px;
-  width: 1179px;
-}
-
 .citymapper-is-a-publ {
   font-weight: 300;
   left: 1415px;
   letter-spacing: 0;
   line-height: 58px;
-  position: absolute;
   top: 3987px;
   width: 851px;
 }
@@ -847,67 +700,11 @@ width: 100%;
   left: 1418px;
   letter-spacing: -1.24px;
   line-height: 73px;
-  position: absolute;
   top: 3762px;
   width: 1179px;
 }
 
-.itv-studios-how-to {
-  font-weight: 500;
-  left: 1849px;
-  letter-spacing: -0.83px;
-  line-height: 73px;
-  position: absolute;
-  top: 1900px;
-  white-space: nowrap;
-  width: 1081px;
-}
 
-.now-play-this-at-som {
-  font-weight: 500;
-  left: 1849px;
-  letter-spacing: -0.83px;
-  line-height: 73px;
-  position: absolute;
-  top: 2062px;
-  white-space: nowrap;
-  width: 1081px;
-}
-
-.london-design-festiv {
-  font-weight: 500;
-  left: 1849px;
-  letter-spacing: -0.83px;
-  line-height: 73px;
-  position: absolute;
-  top: 2229px;
-  white-space: nowrap;
-  width: 1081px;
-}
-
-.london-design-festiv-1 {
-  font-weight: 500;
-  left: 1849px;
-  letter-spacing: -0.83px;
-  line-height: 73px;
-  position: absolute;
-  top: 2381px;
-  white-space: nowrap;
-  width: 1081px;
-}
-
-.awards-and-press {
-  color: var(--vermilion);
-  font-family: var(--font-family-gtalpinatrial-mediumitalic);
-  font-size: var(--font-size-s);
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 55px;
-  position: absolute;
-  top: 1894px;
-  white-space: nowrap;
-}
 
 .col1 {
  height: 100vh;
@@ -926,15 +723,17 @@ width: 100%;
 
 .nav-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 25px 0px 65px 0px;
+  justify-content: space-between;
 }
 
 .col3 {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 70%;
 }
 
 
@@ -1134,4 +933,31 @@ width: 100%;
 
 .hide-menu {
   right: -50vw;
+}
+ 
+.wiggle-chars{
+  font-family:'Cheee-Jimbo', sans-serif;
+  font-size: 2.5em;
+  cursor: pointer;
+
+} 
+.wiggle-chars .char{
+  display: inline-block;
+  transition: transform .15s linear;
+  transform: translateY(0) rotate(0deg);
+} 
+
+.wiggle-chars:hover .char{
+  display: inline-block;
+  transform: translate(0%, -8%) rotate(4deg);
+}
+
+.wiggle-chars:hover .char:nth-of-type(odd) {
+  display: inline-block;
+  transform: translate(0%, 8%) rotate(-4deg);
+}
+
+.arrow-button {
+display:flex;
+align-items: center;
 }

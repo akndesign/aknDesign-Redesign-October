@@ -7,7 +7,7 @@ a{
 }
 
 .about {
-    font-family: Helvetica, sans-serif;
+    font-family: var(--font-family-neuemontreal-medium), sans-serif;
     font-size: 4em;
     cursor: pointer;
 }
@@ -29,6 +29,7 @@ a{
 @keyframes jump { 
     0% {
       transform:translateY(0);
+      
     }
     
     100% {
@@ -55,7 +56,7 @@ z-index: 10;
 width: 75px;
 height: 100vh;
 border-left: 2px solid var(--vermilion);
-background-color: #f0f8ff
+background-color: var(--pale-blue);
 }
 
 .flex-col {
@@ -209,7 +210,7 @@ padding-top: 2em;
 right: 75px;
 z-index: 3;
 overflow: scroll;
-background-color: #ffdfd3;
+background-color:aquamarine;
 padding: 50px
 }
 

@@ -9,26 +9,26 @@ function NavBar(props) {
   const toggle = () => setIsOpen(!isOpen);
 
   useEffect(()=>{
-    const target = document.querySelectorAll(".about");
+    const target = document.querySelectorAll(".about, .i-design-code-and-u");
     const splittingText = Splitting({ target: target, by: "chars" });
   }, [])
 
 
   return (
         <div id="nav-bar">
-        <div id="menu-drawer" className={`menu-drawer ${isOpen ? 'hide-menu' : ''}`}>
+        <div id="menu-drawer" className={`menu-drawer ${isOpen ? '' : 'hide-menu'}`}>
         <div className="menu cheee-jimbo-medium-vermilion-124px">MENU</div>
         <div className="thin-line" alt="Line" />
-        <Link to="#home" className="neuemontreal-medium-vermilion-63px about" data-splitting>
+        <Link to="#home" className="neuemontreal-medium-vermilion-63px about" activeclass spy="true" smooth="true" offset={-70} duration={500} data-splitting>
         Intro</Link>
         <div className="thin-line" alt="Line" />
-        <Link to="#about" className="neuemontreal-medium-vermilion-63px about" data-splitting>
+        <Link to="#about" className="neuemontreal-medium-vermilion-63px about" activeclass spy="true" smooth="true" offset={-70} duration={500} data-splitting>
         About</Link>
         <div className="thin-line" alt="Line" />
-        <div to="#awards" className="about neuemontreal-medium-vermilion-63px" data-splitting>
+        <div to="#awards" className="about neuemontreal-medium-vermilion-63px" activeclass spy="true" smooth="true" offset={-70} duration={500} data-splitting>
         Awards</div>
         <div className="thin-line" alt="Line" />
-        <Link to="#recentwork" className="about neuemontreal-medium-vermilion-63px" data-splitting>Recent Work</Link>
+        <Link to="#recentwork" className="about neuemontreal-medium-vermilion-63px" activeclass spy="true" smooth="true" offset={-70} duration={500} data-splitting>Recent Work</Link>
         <div className="thin-line" alt="Line" />
               <a href="https://www.linkedin.com/in/akndesign/" target="_blank" rel="noopener noreferrer" className="external-link neuemontreal-medium-vermilion-41px">LinkedIn
               <img className="external-link-arrow" src="img/diagonal-arrow.svg" alt="Arrow for External Link" />

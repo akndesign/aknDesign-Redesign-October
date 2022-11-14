@@ -489,7 +489,7 @@ html {
 .introwebpage {
   height: 4658px;
   min-width: 1920px;
-  background-color: #f0f8ff;
+  background-color: var(--pale-blue);
   align-items: flex-start;
   display: flex;
   overflow-x: hidden;

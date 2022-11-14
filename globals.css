@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 @font-face {
   font-family: "GTAlpinaTrial-MediumItalic";
   font-style: italic;
@@ -15,7 +21,7 @@
 @font-face {
   font-family: "Cheee-Jimbo";
   font-weight: 1 1000;
-  src: url("static/fonts/.45264.otf") format("opentype");
+  src: url("./dist/fonts/RoobertTRIAL-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "GTAlpinaTrial-BoldItalic";
@@ -31,18 +37,18 @@
 @font-face {
   font-family: "NeueMontreal-Medium";
   font-weight: 500;
-  src: url("static/fonts/NeueMontreal-Medium.otf") format("opentype");
+  src: url("./dist/fonts/NeueMontreal-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "GTAlpinaTrial-CondensedMediumItalic";
   font-style: italic;
   font-weight: 1 1000;
-  src: url("static/fonts/GT-Alpina-Condensed-Medium-Italic-Trial.otf") format("opentype");
+  src: url("./dist/fonts/RecklessTRIAL-MediumItalic.woff") format("woff");
 }
 @font-face {
   font-family: "GTAlpinaTrial-Light";
   font-weight: 1 1000;
-  src: url("static/fonts/GT-Alpina-Standard-Light-Trial.otf") format("opentype");
+  src: url("./dist/fonts/RecklessTRIAL-LightItalic.woff") format("woff");
 }
 @font-face {
   font-family: "NeueMontreal-Regular";
@@ -60,19 +66,14 @@
   display: flex;
   flex-direction: column;
   /*justify-content: center;*/
-  overflow-x: hidden;
   pointer-events: none;
   width: 100%;
+  background-color: thistle;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .container-center-horizontal > * {
   flex-shrink: 0;
   pointer-events: auto;
-}
-
-
-.about:hover .chars  {
-  animation: jump-reverse .4s linear infinite alternate;
-  animation-delay: calc( -.8s + ( var(--char-index)*.1s ) );
-  animation-timing-function: ease-in-out;
 }

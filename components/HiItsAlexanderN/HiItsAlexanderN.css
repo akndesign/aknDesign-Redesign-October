@@ -12,13 +12,13 @@
   margin-top: -21px;
   min-height: 94px;
   width: 1179px;
-  animation: 2s anim-lineUp ease-out;
+  animation: 2s anim-lineUp ease-in;
 }
 
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
-    transform: translateY(80%);
+    transform: translateY(00%);
   }
   20% {
     opacity: 0;
@@ -29,7 +29,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(80%);
   }
 }
 

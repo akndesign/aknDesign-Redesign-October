@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="203px" height="64px" viewBox="0 0 203 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-294.000000, -74.000000)">
+            <g id="Group" transform="translate(294.000000, 74.000000)">
+                <ellipse id="Oval" stroke="#FF4501" stroke-width="2" cx="101.25" cy="32" rx="100.25" ry="31"></ellipse>
+                <text id="Ready-for-Hire" font-family="RoobertTRIAL-Medium, Roobert TRIAL" font-size="25" font-weight="400" letter-spacing="-0.434210526" fill="#FF4501">
+                    <tspan x="23" y="41">Ready for Hire</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

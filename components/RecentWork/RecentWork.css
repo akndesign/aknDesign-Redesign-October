@@ -1,0 +1,255 @@
+
+.citymapper_-vancouver_final_highres {
+    align-items: flex-end;
+    background-color: #ff4501d9;
+    border: 1px solid;
+    border-color: #969696d9;
+    border-radius: 60px;
+    display: flex;
+    height: 671px;
+    overflow: hidden;
+    padding: 0 132px;
+    width: 864px;
+  }
+  
+  .citymapper_-vancouver_final_highres-1 {
+    height: 746px;
+    margin-bottom: -97px;
+    margin-left: 58px;
+    width: 542px;
+  }
+  
+  .citymapper_-vancouver_final_highres-2 {
+    background-color: #ff450180;
+    border: 1px solid;
+    border-color: #96969680;
+    border-radius: 36px;
+    height: 774px;
+    width: 1216px;
+  }
+  
+  .rectangle-2 {
+    background-color: var(--vermilion);
+    height: 774px;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  .path-2 {
+    height: 560px;
+    left: 1892px;
+    opacity: 0.43;
+    position: absolute;
+    top: 1114px;
+    width: 813px;
+  }
+  
+  .read {
+    color: var(--vermilion);
+    font-family: var(--font-family-cheee-jimbo);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    left: 2705px;
+    letter-spacing: 0;
+    line-height: 61px;
+    position: absolute;
+    top: 3432px;
+    width: 374px;
+  }
+  
+  .recent-work-recent-w {
+    color: var(--vermilion);
+    font-family: var(--font-family-cheee-jimbo);
+    font-size: var(--font-size-xxxxl);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 158px;
+    width: 3109px;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+  
+  .recentwork-subtitle {
+    margin-bottom: 60px;
+  }
+
+  
+  /*! CSS Used from: https://www.miragefestival.com/2020/dev/wp-content/cache/autoptimize/css/autoptimize_e620dec5120eaad8176d96c6265c9af5.css ; media=all */
+  
+      .home-programme-item {
+        font-size: 10vw;
+        border: 3px solid thistle;
+        overflow: hidden;
+        list-style: none;
+      }
+      .home-programme-item {
+        display: flex;
+        align-items: center;
+        height: 1em;
+        text-decoration: none;
+        white-space: nowrap;
+        color: mediumpurple;
+        background-color: #D8BFD8;
+      }
+      .home-programme-item:hover {
+        background: var(--vermilion);
+        color: #fff;
+      }
+
+      .home-programme-item svg {
+        fill: aquamarine;
+      }
+      .home-programme-item:hover svg {
+        fill:white;
+      }
+      .home-programme-item-title {
+        font-family: var(--font-family-cheee-jimbo);
+        cursor: pointer;
+        list-style: none;
+        line-height: 1;
+        font-weight: 400;
+        margin: 0;
+        position: absolute;
+        display: flex;
+      }
+    
+      #home-programme-mirage-creative-title {
+        -webkit-animation: backward-infinite 10s linear infinite;
+        animation: backward-infinite 10s linear infinite;
+      }x
+      .has-intersection .home-programme-item-title {
+        animation-play-state: paused !important;
+      }
+      .has-intersection .is-in-view .home-programme-item-title {
+        animation-play-state: running !important;
+        will-change: transform;
+      }
+      .home-programme-item-link:hover .home-programme-item-title,
+      .has-intersection
+        .is-in-view
+        .home-programme-item-link:hover
+        .home-programme-item-title {
+        animation-play-state: paused !important;
+      }
+  
+    @media screen and (orientation: portrait) {
+      .home-programme-item {
+        font-size: 12.5vw;
+      }
+    }
+    @media print {
+      h4 {
+        font-family: var(--font-family-cheee-jimbo);
+      }
+      h4 {
+        font-size: 12pt;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  /*! CSS Used keyframes */
+  @keyframes backward-infinite {
+    0% {
+      transform: translate3D(0, 0, 0);
+    }
+    100% {
+      transform: translate3D(calc((-100% / 3) - 0.125em), 0, 0);
+    }
+  }
+  
+  .lessfeatured-title {
+    left: -448px;
+    top: 2814px;
+    width: 48vw;
+    height: 156px;
+    z-index: 344;
+    background-color: blue;
+    border-radius: 64px;
+    border-style: solid;
+    border-width: 0px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .line-2 {
+    height: 26px;
+    left: 1388px;
+    position: absolute;
+    top: 3628px;
+    width: 1800px;
+  }
+  
+  .flower-1 {
+    background-size: 100% 100%;
+    height: 83px;
+    left: 2247px;
+    position: absolute;
+    top: 2564px;
+    transform: rotate(-10deg);
+    width: 125px;
+  }
+  
+  .image-1 {
+    height: 115px;
+    position: absolute;
+    width: 115px;
+    margin: 20px;
+  }
+  
+  .works-by-alexander-n {
+    color: var(--vermilion);
+    font-family: var(--font-family-gteestidisplaytrial-md);
+    font-size: 76px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: -1.00px;
+    line-height: 88px;
+    position: absolute;
+    top: 2619px;
+    width: 1565px;
+  }
+  
+  .rectangle-3 {
+    border: 6px solid;
+    border-color: var(--vermilion);
+    height: 189px;
+    left: 1278px;
+  }
+
+.g_-misfits_30082019_-shot_7_403 {
+  border-radius: 40px;
+  display: flex;
+  align-self: center;
+  overflow: hidden;
+  height: 500px;
+  width:700px;
+  margin: auto;
+}
+
+.g_-misfits_30082019_-shot_7_403-1 {
+  height: 500px;
+  margin: auto;
+}
+
+.misfits-is-a-new-sta {
+  font-weight: 300;
+  left: 2705px;
+  letter-spacing: 0;
+  line-height: 58px;
+  width: 813px;
+}
+
+.row-1 {
+  margin: 50px;
+    display: flex;
+    flex-direction: row;
+    max-width: 96%;
+}
