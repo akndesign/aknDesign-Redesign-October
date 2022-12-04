@@ -2,16 +2,20 @@
   "name": "react-package",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./ --no-scope-hoist"
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "axios": "^1.1.2",
+    "dayjs": "^1.11.6",
+    "lottie-web": "^5.10.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "5.2.0",
     "react-router-hash-link": "^2.4.3",
     "react-scroll": "^1.8.8",
-    "splitting": "^1.0.6"
+    "splitting": "^1.0.6",
+    "sun-time": "^1.0.2",
+    "suncalc": "^1.9.0"
   },
   "devDependencies": {
     "browserslist": "4.19.3",

@@ -1,0 +1,27 @@
+.arrow {
+  white-space: nowrap;
+  font-size: 4rem;
+  width: 70px;
+  height: 120px;
+  transform: rotate(90deg);
+  animation: infinite bouncearrow 1s linear;
+  display: inline-flex;
+}
+
+.arrow svg {
+  fill:none;
+  stroke:var(--vermilion);
+  stroke-width: 4;
+}
+/* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
+
+@keyframes bouncearrow {
+  0% {
+    transform: translate(0px);
+    rotate: 90deg;
+  }
+  100% {
+    transform: translateY(14px);
+    rotate: 90deg;
+  }
+}

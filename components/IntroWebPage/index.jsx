@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import About from "../About/About";
 import Awards from "../Awards/Awards";
 import RecentWork from "../RecentWork/RecentWork";
+import Interstitial from "../Interstitial/Interstitial";
 import "./IntroWebPage.css";
 
 function IntroWebPage(props) {
@@ -46,7 +47,9 @@ function IntroWebPage(props) {
     <>
       <div className="container-center-horizontal">
           <NavBar></NavBar>
+          
           <Home></Home>
+          <Interstitial></Interstitial>
           <About></About>
           <RecentWork
           recentWork={recentWorkRecentW}

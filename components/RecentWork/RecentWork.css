@@ -77,39 +77,28 @@
   .recentwork-subtitle {
     margin-bottom: 60px;
   }
-
   
-  /*! CSS Used from: https://www.miragefestival.com/2020/dev/wp-content/cache/autoptimize/css/autoptimize_e620dec5120eaad8176d96c6265c9af5.css ; media=all */
-  
-      .home-programme-item {
-        font-size: 10vw;
-        border: 3px solid thistle;
-        overflow: hidden;
-        list-style: none;
-      }
-      .home-programme-item {
+      .horizontal-ticker {
         display: flex;
         align-items: center;
-        height: 1em;
+        height: 6em;
         text-decoration: none;
         white-space: nowrap;
-        color: mediumpurple;
-        background-color: #D8BFD8;
+        color:var(--pale-blue);
+        background-color: var(--purple);
       }
-      .home-programme-item:hover {
-        background: var(--vermilion);
-        color: #fff;
+      .horizontal-ticker:hover {
+        background: var(--neon-green);
+        color: var(--vermilion);
       }
 
-      .home-programme-item svg {
+      .horizontal-ticker svg {
         fill: aquamarine;
       }
-      .home-programme-item:hover svg {
+      .horizontal-ticker:hover svg {
         fill:white;
       }
-      .home-programme-item-title {
-        font-family: var(--font-family-cheee-jimbo);
-        cursor: pointer;
+      .horizontal-ticker-title {
         list-style: none;
         line-height: 1;
         font-weight: 400;
@@ -121,24 +110,24 @@
       #home-programme-mirage-creative-title {
         -webkit-animation: backward-infinite 10s linear infinite;
         animation: backward-infinite 10s linear infinite;
-      }x
-      .has-intersection .home-programme-item-title {
+      }
+      .has-intersection .horizontal-ticker-title {
         animation-play-state: paused !important;
       }
-      .has-intersection .is-in-view .home-programme-item-title {
+      .has-intersection .is-in-view .horizontal-ticker-title {
         animation-play-state: running !important;
         will-change: transform;
       }
-      .home-programme-item-link:hover .home-programme-item-title,
+      .horizontal-ticker-link:hover .horizontal-ticker-title,
       .has-intersection
         .is-in-view
-        .home-programme-item-link:hover
-        .home-programme-item-title {
+        .horizontal-ticker-link:hover
+        .horizontal-ticker-title {
         animation-play-state: paused !important;
       }
   
     @media screen and (orientation: portrait) {
-      .home-programme-item {
+      .horizontal-ticker {
         font-size: 12.5vw;
       }
     }
@@ -169,7 +158,6 @@
     top: 2814px;
     width: 48vw;
     height: 156px;
-    z-index: 344;
     background-color: blue;
     border-radius: 64px;
     border-style: solid;
@@ -251,5 +239,6 @@
   margin: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     max-width: 96%;
 }

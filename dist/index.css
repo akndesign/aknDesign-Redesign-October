@@ -40,7 +40,7 @@
 }
 
 @font-face {
-  font-family: GTAlpinaTrial-Light;
+  font-family: reckless-light;
   font-weight: 1 1000;
   src: url("GT-Alpina-Standard-Light-Trial.a5dc990c.otf") format("opentype");
 }
@@ -87,7 +87,7 @@
   --font-family-cheee-jimbo: "Cheee-Jimbo", Helvetica;
   --font-family-gtalpinatrial-bolditalic: "GTAlpinaTrial-BoldItalic", Helvetica;
   --font-family-gtalpinatrial-condensedmediumitalic: "GTAlpinaTrial-CondensedMediumItalic", Helvetica;
-  --font-family-gtalpinatrial-light: "GTAlpinaTrial-Light", Helvetica;
+  --font-family-reckless-light: "reckless-light", Helvetica;
   --font-family-gtalpinatrial-mediumitalic: "GTAlpinaTrial-MediumItalic", Helvetica;
   --font-family-gteestidisplaytrial-md: "GTEestiDisplayTrial-Md", Helvetica;
   --font-family-neuemontreal-medium: "NeueMontreal-Medium", Helvetica;
@@ -118,9 +118,9 @@
   font-weight: 500;
 }
 
-.gtalpinatrial-light-vermilion-51px {
+.reckless-light-vermilion-51px {
   color: var(--vermilion);
-  font-family: var(--font-family-gtalpinatrial-light);
+  font-family: var(--font-family-reckless-light);
   font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 300;

@@ -2,7 +2,6 @@
   align-items: flex-start;
   display: flex;
   height: 73px;
-  min-width: 1180px;
 }
 
 .hi-its-alexander-n-1 {
@@ -13,6 +12,7 @@
   min-height: 94px;
   width: 1179px;
   animation: 2s anim-lineUp ease-in;
+  color: var(--pale-blue);
 }
 
 @keyframes anim-lineUp {

@@ -8,21 +8,18 @@ function RecentWork (props) {
   return (
     <>
     <div id="recentwork">
-    <div class="home-programme-item scroll-trigger scroll-visible visible is-in-view">
-          <h4 id="home-programme-mirage-creative-title" class="home-programme-item-title">{props.recentWork}</h4>
+    <div className="horizontal-ticker scroll-trigger scroll-visible visible is-in-view">
+          <h4 className="home-programme-mirage-creative-title blogh">{props.recentWork}</h4>
           </div>
         <div className="row-1">
         <div className="col4"> 
-          <div className="misfits-a-new-stacki neuemontreal-medium-vermilion-94px">Misfits
-          <div className="neuemontreal-medium-vermilion-41px">A new stacking game</div></div>
+          <div className="misfits-a-new-stacki blogh">Misfits
+          <div className="roobert-medium-vermilion-41px">A new stacking game</div></div>
 
-          <div className="misfits-is-a-new-sta gtalpinatrial-light-vermilion-51px">{props.misfitsIsANewSta}</div>
-          <div className="neuemontreal-medium-vermilion-25px wiggle-chars words chars splitting">Read more</div>
+          <div className="misfits-is-a-new-sta reckless-light-vermilion-36px">{props.misfitsIsANewSta}      <strong>Anhtony Burrril said this and Damien said that</strong> </div>
+          <div className="roobert-medium-vermilion-25px button-pill wiggle-chars chars splitting">Read more</div>
         </div>
-       
-       
-        
-       
+
         <div className="g_-misfits_30082019_-shot_7_403">
           <img className="image-1" src={props.circleNewGame} alt="Coming Soon a New Game" />
           <img
@@ -42,8 +39,8 @@ function RecentWork (props) {
             alt="Citymapper_Vancouver_final_highres" />
         </div>
         <div>
-        <div className="citymapper-vancouver neuemontreal-medium-vermilion-94px">{props.citymapperVancouver}</div>
-        <div className="citymapper-is-a-publ gtalpinatrial-light-vermilion-51px">{props.citymapperIsAPubl}</div>
+        <div className="citymapper-vancouver blogh">{props.citymapperVancouver}</div>
+        <div className="citymapper-is-a-publ reckless-light-vermilion-36px">{props.citymapperIsAPubl}</div>
         </div>
         </div>
       </div>

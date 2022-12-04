@@ -24,9 +24,9 @@
   src: url("fonts/GT-Eesti-Display-Medium-Trial.otf") format("opentype");
 }
 @font-face {
-  font-family: "NeueMontreal-Medium";
+  font-family: "roobert-Medium";
   font-weight: 500;
-  src: url("fonts/NeueMontreal-Medium.otf") format("opentype");
+  src: url("fonts/roobert-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "GTAlpinaTrial-CondensedMediumItalic";
@@ -35,14 +35,14 @@
   src: url("fonts/GT-Alpina-Condensed-Medium-Italic-Trial.otf") format("opentype");
 }
 @font-face {
-  font-family: "GTAlpinaTrial-Light";
+  font-family: "reckless-light";
   font-weight: 1 1000;
   src: url("fonts/GT-Alpina-Standard-Light-Trial.otf") format("opentype");
 }
 @font-face {
-  font-family: "NeueMontreal-Regular";
+  font-family: "roobert-Regular";
   font-weight: 400;
-  src: url("fonts/NeueMontreal-Regular.otf") format("opentype");
+  src: url("fonts/roobert-Regular.otf") format("opentype");
 }
 
 

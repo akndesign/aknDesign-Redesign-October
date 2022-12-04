@@ -7,9 +7,9 @@ a{
 }
 
 .about {
-    font-family: var(--font-family-neuemontreal-medium), sans-serif;
+    font-family: var(--font-family-roobert-medium), sans-serif;
     font-size: 4em;
-    cursor: pointer;
+    ;
 }
 
 .about:hover .char {
@@ -48,6 +48,30 @@ a{
 }
 
 
+.blogh-title {
+  font-family:  var(--font-family-blogh);
+  color: var(--vermilion);
+  font-size: 100px;
+}
+
+#nav-bar .blogh {
+  font-family:  var(--font-family-blogh);
+  color: var(--vermilion);
+  font-size: 70px;
+}
+
+
+.blogh-small {
+  font-family:  var(--font-family-blogh);
+  color: var(--vermilion);
+  font-size: 41px;
+}
+.blogh-xs {
+  font-family:  var(--font-family-blogh);
+  color: var(--vermilion);
+  font-size: 20px;
+}
+
 #vertical-nav {
 position: fixed;
 right: 0;
@@ -60,14 +84,17 @@ background-color: var(--pale-blue);
 }
 
 .flex-col {
-align-items: center;
-display: flex;
-flex-direction: column;
-gap: 246px;
-margin: 68px auto;
-min-height: 626px;
-width: 54px
+  min-height: 100%;
+    width: 54px;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 68px auto;
+    display: flex;
 }
+
 .pacman {
 width: 3rem;
 height: 3rem;
@@ -161,7 +188,7 @@ width: 9px
 .oval {
 background: 0 0;
 color: var(--color-light);
-cursor: pointer
+
 }
 
 .group-6 {
@@ -210,29 +237,46 @@ padding-top: 2em;
 right: 75px;
 z-index: 3;
 overflow: scroll;
-background-color:aquamarine;
-padding: 50px
+background-color: var(--neon-green);
+padding: 50px;
+display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .hide-menu {
     right: -50vw;
 }
 
-.thin-line {
+.menu-drawer .thin-line {
 height: 1px;
 width: 100%;
 background: var(--vermilion);
-margin: 50px 0 50px 0
+margin: 20px 0 20px 0
 }
+
+.thin-line-smaller-margin {
+  height: 1px;
+  width: 100%;
+  background: var(--vermilion);
+  margin: 50px 0 50px 0
+  }
+  
 
 .external-link-arrow {
 height: 25px;
 margin-left: 5px
 }
 
+.external-link-arrow-smaller {
+  height: 22px;
+  margin-left: 5px
+  }
+
 .external-link {
 text-decoration: none;
 display: inline;
-border-bottom: 2px solid var(--vermilion)
+border-bottom: 2px solid var(--vermilion);
+width: fit-content;
 }
 

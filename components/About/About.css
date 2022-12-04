@@ -1,7 +1,40 @@
 .my-client-based-work {
-  margin: auto;
+  margin: auto auto 100px auto;
+  line-height: 75px;
 }
 
 #awards .col3 {
   height: 100vh;
+}
+
+.blogh {
+  font-family:  var(--font-family-blogh);
+  font-size: 70px;
+  line-height: 90px;
+}
+
+#blogh-external-link {
+  text-decoration: none;
+  display: inline;
+  border-bottom: 8px solid var(--pale-blue);;
+  color: var(--pale-blue);
+  fill: var(--pale-blue);
+}
+
+#blogh-external-link:hover {
+  text-decoration: none;
+  display: inline;
+  border-bottom: 8px solid var(--neon-green);
+  color: var(--neon-green);
+  fill: var(--neon-green);
+
+}
+
+.about-button-group {
+    display: flex;
+    margin-top: 46px;
+  }
+
+.about-button-group>div {
+    margin-right: auto;
 }

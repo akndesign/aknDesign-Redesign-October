@@ -15,12 +15,19 @@ html,body{
 @font-face {
   font-family: "GTAlpinaTrial-MediumItalic";
   font-style: italic;
-  font-weight: 1 1000;
-  src: url("static/fonts/GT-Alpina-Standard-Medium-Italic-Trial.otf") format("opentype");
+  font-weight: 500;
+  src: url("./dist/fonts/GT-Alpina-Fine-Condensed-Medium-Italic-Trial.otf") format("opentype");
 }
+
 @font-face {
-  font-family: "Cheee-Jimbo";
-  font-weight: 1 1000;
+  font-family: "Blogh";
+  font-weight: 1 400; 
+  src: url("./dist/Blogh.b299a7fc.otf") format("opentype");
+} 
+
+@font-face {
+  font-family: "Roobert-Regular";
+  font-weight: 300;
   src: url("./dist/fonts/RoobertTRIAL-Regular.otf") format("opentype");
 }
 @font-face {
@@ -39,17 +46,32 @@ html,body{
   font-weight: 500;
   src: url("./dist/fonts/NeueMontreal-Medium.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Roobert-Medium";
+  font-weight: 500;
+  src: url("./dist/fonts/RoobertTRIAL-Medium.otf") format("opentype");
+}
 @font-face {
   font-family: "GTAlpinaTrial-CondensedMediumItalic";
   font-style: italic;
   font-weight: 1 1000;
   src: url("./dist/fonts/RecklessTRIAL-MediumItalic.woff") format("woff");
 }
+
 @font-face {
-  font-family: "GTAlpinaTrial-Light";
+  font-family: "Reckless-Light";
   font-weight: 1 1000;
   src: url("./dist/fonts/RecklessTRIAL-LightItalic.woff") format("woff");
 }
+
+@font-face {
+  font-family: "GTAlpinaTrial-Medium";
+  font-weight: 1 1000;
+  src: url("./dist/fonts/RecklessTRIAL-MediumItalic.woff") format("woff");
+}
+
+
 @font-face {
   font-family: "NeueMontreal-Regular";
   font-weight: 400;
@@ -77,3 +99,4 @@ html,body{
   flex-shrink: 0;
   pointer-events: auto;
 }
+

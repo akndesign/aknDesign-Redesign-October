@@ -64,9 +64,8 @@
   
   .awards-and-press {
     color: var(--vermilion);
-    font-family: var(--font-family-gtalpinatrial-mediumitalic);
+    font-family: var(--font-family-blogh);
     font-size: var(--font-size-s);
-    font-style: italic;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 55px;
