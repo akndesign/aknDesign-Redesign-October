@@ -7,22 +7,23 @@
  import React from "react";
  import { useEventListener } from "./hooks";
  import "./EasterEgg.css";
+ import { useState, useRef, useCallback} from "react";
  
  export default function App() {
-   const [eyes, setEyes] = React.useState([ ]);
-   const [mouseCoordinates, setMouseCoordinates] = React.useState({
+   const [eyes, setEyes] = useState([]);
+   const [mouseCoordinates, setMouseCoordinates] = useState({
      x: 0,
      y: 0
    });
  
-   const handler = React.useCallback(
+   const handler = useCallback(
      ({ clientX, clientY }) => {
        setMouseCoordinates({ x: clientX, y: clientY });
      },
      [setMouseCoordinates]
    );
  
-   const clickHandler = React.useCallback(
+   const clickHandler = useCallback(
      ({ clientX, clientY }) => {
        setEyes(
          eyes.concat({
@@ -43,7 +44,7 @@
  }
  
  const Eyes = ({ mouseCoordinates, ...rest }) => {
-   const eyesRef = React.useRef();
+   const eyesRef = useRef();
  
    const getEyeStyle = () => {
      if (eyesRef.current) {

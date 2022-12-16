@@ -17,6 +17,8 @@
   --font-family-gtalpinatrial-bolditalic: "GTAlpinaTrial-BoldItalic", Helvetica;
   --font-family-gtalpinatrial-condensedmediumitalic: "GTAlpinaTrial-BoldItalic", Helvetica;
   --font-family-reckless-light: "Reckless-Light", Helvetica;
+  --font-family-reckless-light-italic: "Reckless-Light-Italic", Helvetica;
+  --font-family-reckless-light-italic: "Reckless-Light", Helvetica;
   --font-family-gtalpinatrial-mediumitalic: "GTAlpinaTrial-MediumItalic", Helvetica;
   --font-family-gteestidisplaytrial-md: "GTEestiDisplayTrial-Md", Helvetica;
   --font-family-roobert-medium: "Roobert-Medium", Helvetica;
@@ -44,13 +46,22 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
+  line-height: 1;
 }
 
-.roobert-medium-vermilion-36px-pale-blue {
+.roobert-medium-vermilion-25px-pale-blue {
   color: var(--pale-blue);
   font-family: var(--font-family-roobert-light);
   font-size: 25px;
   font-weight: 300;
+}
+
+.roobert-medium-vermilion-36px {
+  color: var(--vermilion);
+  font-family: var(--font-family-roobert-light);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 
@@ -107,6 +118,7 @@
   font-weight: 300;
 }
 
+
 .gtalpinatrial-medium-red-64px {
   color: var(--vermilion);
   font-family: var(--font-family-gtalpinatrial-mediumitalic);
@@ -129,6 +141,28 @@
   font-style: normal;
   font-weight: 300;
 }
+
+
+.reckless-light-italic-vermilion-25px {
+  color: var(--vermilion);
+  font-family: var(--font-family-reckless-light-italic);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  width: 75%;
+}
+
+
+.reckless-regular-vermilion-25px {
+  color: var(--vermilion);
+  font-family: var(--font-family-reckless);
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 300;
+  width: 75%;
+}
+
+
 
 .reckless-light-vermilion-51px {
   color: var(--vermilion);
@@ -256,7 +290,7 @@
 
 .button-pill-red:hover {
   background-color: transparent;
-  color: var(--vermilion);
+  color: var(--pale-blue);
   transition-duration: .3s;
   transition-timing-function: cubic-bezier(.23,1,.32,1);
 }

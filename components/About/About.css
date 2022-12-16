@@ -1,13 +1,33 @@
+#about {
+  align-items: center;
+}
+
 .my-client-based-work {
   margin: auto auto 100px auto;
   line-height: 75px;
+}
+
+.rectangle-2 {
+  background-color: var(--vermilion);
+  height: 110vh;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.expanded-about {
+  height: 125vh;
+
+}
+
+#about-text {
+  align-items: center;
 }
 
 #awards .col3 {
   height: 100vh;
 }
 
-.blogh {
+.blogh, .blogh-red {
   font-family:  var(--font-family-blogh);
   font-size: 70px;
   line-height: 90px;
@@ -32,7 +52,7 @@
 
 .about-button-group {
     display: flex;
-    margin-top: 46px;
+    margin: 46px 0px;
   }
 
 .about-button-group>div {

@@ -62,6 +62,13 @@ html,body{
 @font-face {
   font-family: "Reckless-Light";
   font-weight: 1 1000;
+  src: url("./dist/fonts/RecklessTRIAL-Light.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "Reckless-Light-Italic";
+  font-weight: 1 1000;
   src: url("./dist/fonts/RecklessTRIAL-LightItalic.woff") format("woff");
 }
 

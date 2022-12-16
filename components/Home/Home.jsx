@@ -104,8 +104,8 @@ function Home(props) {
       navigator.clipboard.writeText('alexander@akndesign.com')
       console.log('User selected copy to clipboard');
       setButtonText("Email Copied!");
-      setbuttonAnimation("")
-      setTimeout(()=>{setButtonText('Ready to Hire'); setbuttonAnimation("hide")}, 2250)
+      setTimeout(()=>{setbuttonAnimation("")}, 1000)
+      setTimeout(()=>{setButtonText('Ready to Hire'); setbuttonAnimation("hide")}, 3350)
     }
 
 
@@ -132,7 +132,7 @@ function Home(props) {
             </div>
             <div className="boston-ma-us "> Boston, MA, USA </div>
             <div className="cta-hiring">
-            <div className="roobert-medium-vermilion-25px button-pill-red wiggle-chars" onClick={copytoClipboard} onMouseUp={() => lottie.stop("stars")}>{buttonText}</div> 
+            <div className="roobert-medium-vermilion-25px button-pill-red wiggle-chars pushme" onClick={copytoClipboard}> <span className="inner">{buttonText}</span></div> 
             <div ref={containerTwo} className={`email ${buttonAnimation}`}></div>    
               </div>
               
@@ -145,7 +145,7 @@ function Home(props) {
           <div ref={containerOne} className="illustration"></div> 
           {/* <img className="illustration" src={"../img/illustration of me-05.svg"}></img>    */}
           <div className="hi-its-alexander-n grow-rotate">
-          <div className="hi-its-alexander-n-1 roobert-medium-vermilion-94px">I'm Alexander Neumann, <br></br>a designer and coder. </div>
+          <div className="hi-its-alexander-n-1 roobert-medium-vermilion-94px">I'm Alexander Neumann, <br></br>a designer and coder </div>
          
         
           {/* <div className="hi-its-alexander-n-1 roobert-medium-vermilion-94px">I examine <span className="reckless-light-vermilion-36px">joy, play,</span>and<span className="reckless-light-vermilion-51px"> discovery</span> in my work.</div> */}
@@ -160,16 +160,15 @@ function Home(props) {
             </div>
 
             <div className="recent-flower-group">
-            <div className="reckless-light-vermilion-36px">I examine joy, play and discovery in my work.</div>
+            <div className="reckless-light-vermilion-36px">I examine joy, play and discovery in my work</div>
        
              
               {/* <div className="flower breathing"><div className="roobert-medium-vermilion-25px wiggle-chars">Continue</div><img src="../img/flower-outline.svg"/></div> */}
             
             </div>
             <div className="arrow-button wiggle-chars ">
-            <Link to="#recentwork" className="roobert-medium-vermilion-25px button-pill" style={{"z-index": "2"}} activeclass="true" spy="true" smooth="true" offset={-70} duration={500} >Recent Work</Link>
-            <Arrow></Arrow>
-            <div ref={containerThree} className="recent-work-button"></div> 
+            <Link to="#recentwork" className="roobert-medium-vermilion-25px button-pill" style={{"zIndex": "2"}} activeclass="true" spy="true" smooth="true" offset={-70} duration={500} >Recent Work</Link>
+            <div className="recent-work-button"></div> 
             
             </div>
             

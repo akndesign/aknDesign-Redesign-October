@@ -2,8 +2,6 @@
 .citymapper_-vancouver_final_highres {
     align-items: flex-end;
     background-color: #ff4501d9;
-    border: 1px solid;
-    border-color: #969696d9;
     border-radius: 60px;
     display: flex;
     height: 671px;
@@ -12,11 +10,19 @@
     width: 864px;
   }
   
+  .citymapper-container {
+    width: 700px;
+    height: 500px;
+    background-color: var(--vermilion);
+    border-radius: 36px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  }
+  
   .citymapper_-vancouver_final_highres-1 {
-    height: 746px;
-    margin-bottom: -97px;
-    margin-left: 58px;
-    width: 542px;
+    height: 450px;
   }
   
   .citymapper_-vancouver_final_highres-2 {
@@ -26,13 +32,6 @@
     border-radius: 36px;
     height: 774px;
     width: 1216px;
-  }
-  
-  .rectangle-2 {
-    background-color: var(--vermilion);
-    height: 774px;
-    width: 100%;
-    border-radius: 30px;
   }
   
   .path-2 {
@@ -72,6 +71,15 @@
     position: absolute;
     white-space: nowrap;
     animation: marquee 30s linear infinite;
+  }
+
+
+
+  .line {
+    width: 100%;
+    border: 1px solid var(--vermilion);
+    color: var(--vermilion);
+    fill: var(--vermilion);
   }
   
   .recentwork-subtitle {
@@ -154,18 +162,14 @@
   }
   
   .lessfeatured-title {
-    left: -448px;
-    top: 2814px;
-    width: 48vw;
+    width: 50%;
     height: 156px;
-    background-color: blue;
+    background-color:var(--vermilion);
     border-radius: 64px;
     border-style: solid;
     border-width: 0px;
     box-sizing: border-box;
   }
-  
-  
   
   .line-2 {
     height: 26px;
@@ -212,13 +216,12 @@
     left: 1278px;
   }
 
-.g_-misfits_30082019_-shot_7_403 {
+.g_Misfits_30082019_Shot_7_403 {
   border-radius: 40px;
   display: flex;
   align-self: center;
   overflow: hidden;
   height: 500px;
-  width:700px;
   margin: auto;
 }
 
@@ -227,18 +230,88 @@
   margin: auto;
 }
 
-.misfits-is-a-new-sta {
+.featured-description {
   font-weight: 300;
-  left: 2705px;
   letter-spacing: 0;
-  line-height: 58px;
-  width: 813px;
+  line-height: 48px;
+  max-width: 80%;
+}
+
+.quotes {
+  max-width: 80%;
 }
 
 .row-1 {
-  margin: 50px;
+  padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     max-width: 96%;
+    border-radius: 30px;
+    height: 80vh;
 }
+
+.blogh-red {
+  color: var(--vermilion);
+  line-height: 60px;
+  white-space: pre-line;
+}
+
+
+.blogh-smaller-title {
+  font-family: var(--font-family-blogh);
+  line-height: 60px;
+  white-space: pre-line;
+  font-size: 30px;
+
+}
+
+
+#circle {
+  position: absolute;
+  overflow: hidden;
+  margin: -25px;
+  z-index: 3;
+}
+
+#circle text {
+  font-family: var(--font-family-roobert-medium), Arial;
+  font-size: 16.5px;
+  font-weight: bold;
+  fill: var(--neon-green);
+}
+
+#circle svg {
+  animation: rotate 15s infinite linear;
+}
+
+.image-slider:hover {
+  cursor: none;
+}
+
+.slider-cursor {
+    visibility: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition-timing-function: cubic-bezier(.23,1,.32,1);
+    transition-duration: .1s;
+  font-size: 30px;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  
+  }
+}
+
+
