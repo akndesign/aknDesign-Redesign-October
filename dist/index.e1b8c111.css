@@ -19,7 +19,7 @@ html, body {
 @font-face {
   font-family: Blogh;
   font-weight: 1 400;
-  src: url("Blogh.b299a7fc.d7ffa3e2.otf") format("opentype");
+  src: url("Blogh.b299a7fc.otf") format("opentype");
 }
 
 @font-face {
@@ -64,6 +64,12 @@ html, body {
   font-family: Reckless-Light;
   font-weight: 1 1000;
   src: url("RecklessTRIAL-Light.c226ede5.woff") format("woff");
+}
+
+@font-face {
+  font-family: Reckless-Light-Italic;
+  font-weight: 1 1000;
+  src: url("RecklessTRIAL-LightItalic.194af25f.woff") format("woff");
 }
 
 @font-face {
@@ -2144,9 +2150,15 @@ a {
   width: 700px;
   height: 500px;
   background-color: var(--vermilion);
+  -webkit-user-select: none;
+  user-select: none;
+  width: 700px;
+  height: 500px;
+  background-color: var(--vermilion);
   border-radius: 36px;
   justify-content: center;
   align-items: center;
+  padding-left: 55px;
   display: flex;
 }
 
@@ -2346,6 +2358,7 @@ a {
 
 .g_Misfits_30082019_Shot_7_403 {
   height: 500px;
+  width: 45vw;
   border-radius: 40px;
   align-self: center;
   margin: auto;
@@ -2354,6 +2367,7 @@ a {
 }
 
 .g_-misfits_30082019_-shot_7_403-1 {
+  width: 45vw;
   height: 500px;
   margin: auto;
 }
@@ -2416,16 +2430,39 @@ a {
 }
 
 .slider-cursor {
+  opacity: 0;
   visibility: none;
   width: 20px;
   height: 20px;
   -webkit-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
-  font-size: 30px;
+  font-size: 50px;
+  font-family: var(--font-family-blogh);
+  color: var(--neon-green);
+  mix-blend-mode: difference;
   transition-duration: .1s;
   transition-timing-function: cubic-bezier(.23, 1, .32, 1);
   position: absolute;
+}
+
+.sliderNav {
+  text-align: center;
+  max-width: 40%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sliderNav .oval {
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.sliderNav .active {
+  transform: translateY(-15px);
 }
 
 @keyframes rotate {

@@ -21,18 +21,19 @@ function FeaturedWork (props) {
 
 </div>
 <div>
-<div className={props.mainImageContainer}>
-    {props.circleNewGame}
-    <ImageSlider
-    mainImage= {props.mainImage}
+<ImageSlider
+    mainImageContainer = {props.mainImageContainer}
+    mainImageClassName={props.mainImageClassName}
+    circleNewGam e= {props.circleNewGame}
+    mainImage = {props.mainImage}
     sliderImages = {props.sliderImages}
-    mainImageContainer ={props.mainImageClassName}
     ></ImageSlider>
+
+    
   {/* <img
     className={props.mainImageClassName}
     src={props.mainImage}
     alt="g_Misfits_30082019_Shot_7_403" />  */}
-</div>
 </div>
 </div>
 </>

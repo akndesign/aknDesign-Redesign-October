@@ -48601,8 +48601,10 @@ function RecentWork(props) {
                     sliderImages: [
                         props.g_Misfits_30082019_Shot_7_403,
                         "https://i.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE",
-                        "https://i.picsum.photos/id/466/536/354.jpg?hmac=COFTOU6K4rrBE2uslra_XfQzvIZTzo0IA9mX1UCh6IE"
+                        "https://i.picsum.photos/id/466/536/354.jpg?hmac=COFTOU6K4rrBE2uslra_XfQzvIZTzo0IA9mX1UCh6IE",
+                        "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
                     ],
+                    mainImageContainer: "misfits-container",
                     mainImageClassName: "g_Misfits_30082019_Shot_7_403",
                     circleNewGame: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rotatingCircleDefault.default), {}, void 0, false, void 0, void 0),
                     buttonText: "See Player Reactions"
@@ -48624,11 +48626,10 @@ function RecentWork(props) {
                     sliderImages: [
                         props.citymapper_Vancouver_Final_Highres,
                         "http://https://i.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
-                    ],
-                    specialImage: props.g_Misfits_30082019_Shot_7_403
+                    ]
                 }, void 0, false, {
                     fileName: "components/RecentWork/RecentWork.jsx",
-                    lineNumber: 43,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectWorkDefault.default), {
@@ -48765,21 +48766,14 @@ function FeaturedWork(props) {
                     columnNumber: 1
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: props.mainImageContainer,
-                        children: [
-                            props.circleNewGame,
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageSliderDefault.default), {
-                                mainImage: props.mainImage,
-                                sliderImages: props.sliderImages,
-                                mainImageContainer: props.mainImageClassName
-                            }, void 0, false, {
-                                fileName: "components/RecentWork/WorkComponents/FeaturedWork.jsx",
-                                lineNumber: 26,
-                                columnNumber: 5
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageSliderDefault.default), {
+                        mainImageContainer: props.mainImageContainer,
+                        mainImageClassName: props.mainImageClassName,
+                        circleNewGam: true,
+                        e: props.circleNewGame,
+                        mainImage: props.mainImage,
+                        sliderImages: props.sliderImages
+                    }, void 0, false, {
                         fileName: "components/RecentWork/WorkComponents/FeaturedWork.jsx",
                         lineNumber: 24,
                         columnNumber: 1
@@ -48830,6 +48824,18 @@ function ImageSlider(props) {
         clientY: 0
     });
     const sliderCursor = (0, _react.useRef)();
+    let sliderNav = props.sliderImages.map((value, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: index === count - 1 ? "oval active" : "oval",
+            onClick: ()=>handleOvalClick(index, props)
+        }, value, false, {
+            fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
+            lineNumber: 12,
+            columnNumber: 59
+        }, this));
+    const handleOvalClick = (index, props)=>{
+        setCount(index + 1);
+        setImgSource(props.sliderImages[index]);
+    };
     const handleMouseMove = (e)=>{
         setCoord({
             clientX: e.pageX,
@@ -48858,42 +48864,52 @@ function ImageSlider(props) {
         sliderCursor.current.style.top = e.pageY + "px";
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "image-slider",
-            onMouseMove: handleMouseMove,
-            onMouseLeave: handleMouseLeave,
-            onClick: ()=>imageSliderChange(props),
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    ref: sliderCursor,
-                    className: "slider-cursor",
-                    children: [
-                        count,
-                        "/",
-                        props.sliderImages.length
-                    ]
-                }, void 0, true, {
-                    fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
-                    lineNumber: 49,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: props.mainImageContainer,
-                    src: imgSource,
-                    alt: "text",
-                    id: "image"
-                }, void 0, false, {
-                    fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
-                    lineNumber: 50,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
-            lineNumber: 48,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `image-slider ${props.mainImageContainer}`,
+                onMouseMove: handleMouseMove,
+                onMouseLeave: handleMouseLeave,
+                onClick: ()=>imageSliderChange(props),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        ref: sliderCursor,
+                        className: "slider-cursor",
+                        children: [
+                            count,
+                            "/",
+                            props.sliderImages.length
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: props.mainImageClassName,
+                        src: imgSource,
+                        alt: "text",
+                        id: "image"
+                    }, void 0, false, {
+                        fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
+                        lineNumber: 60,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
+                lineNumber: 58,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "sliderNav",
+                children: sliderNav
+            }, void 0, false, {
+                fileName: "components/RecentWork/ImageSlider/ImageSlider.jsx",
+                lineNumber: 64,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
 }
 _s(ImageSlider, "+wtVL5GSz8JcKHBVTaCRKBgfaaI=");
 _c = ImageSlider;

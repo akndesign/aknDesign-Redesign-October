@@ -16,8 +16,17 @@
     background-color: var(--vermilion);
     border-radius: 36px;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 700px;
+    height: 500px;
+    background-color: var(--vermilion);
+    border-radius: 36px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 55px; 
     
   }
   
@@ -223,9 +232,12 @@
   overflow: hidden;
   height: 500px;
   margin: auto;
+  width: 45vw;
+  
 }
 
 .g_-misfits_30082019_-shot_7_403-1 {
+  width: 45vw;
   height: 500px;
   margin: auto;
 }
@@ -291,16 +303,44 @@
 }
 
 .slider-cursor {
+  opacity: 0;
     visibility: none;
     position: absolute;
     width: 20px;
     height: 20px;
     transition-timing-function: cubic-bezier(.23,1,.32,1);
     transition-duration: .1s;
-  font-size: 30px;
+  font-size: 50px;
   user-select: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  font-family: var(--font-family-blogh);
+  color: var(--neon-green);
+  mix-blend-mode: difference;
+}
+
+.sliderNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  max-width: 40%;
+  margin: 0 auto;
+
+}
+
+.sliderNav .oval {
+  cursor:pointer;
+  transition: transform 1s;
+}
+
+.sliderNav .oval {
+
+}
+
+.sliderNav .active {
+  transform: translateY(-15px);
 }
 
 

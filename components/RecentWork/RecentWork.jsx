@@ -34,7 +34,8 @@ function RecentWork (props) {
         quoteAuthor="- Anthony Burrill, renowned UK-based
         graphic artist, profiled by Apple"
         mainImage={props.g_Misfits_30082019_Shot_7_403}
-        sliderImages={[props.g_Misfits_30082019_Shot_7_403, "https://i.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE", "https://i.picsum.photos/id/466/536/354.jpg?hmac=COFTOU6K4rrBE2uslra_XfQzvIZTzo0IA9mX1UCh6IE"]}
+        sliderImages={[props.g_Misfits_30082019_Shot_7_403, "https://i.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE", "https://i.picsum.photos/id/466/536/354.jpg?hmac=COFTOU6K4rrBE2uslra_XfQzvIZTzo0IA9mX1UCh6IE", "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80"]}
+        mainImageContainer={'misfits-container'}
         mainImageClassName={'g_Misfits_30082019_Shot_7_403'}
         circleNewGame={<RotatingCircle></RotatingCircle>}
         buttonText= {"See Player Reactions"}
@@ -51,7 +52,6 @@ function RecentWork (props) {
         mainImageContainer={'citymapper-container'}
         mainImageClassName={'citymapper_-vancouver_final_highres-1'}
         sliderImages={[props.citymapper_Vancouver_Final_Highres, "http://https://i.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"]}
-        specialImage={props.g_Misfits_30082019_Shot_7_403}
         ></FeaturedWork>
 
         <ProjectWork

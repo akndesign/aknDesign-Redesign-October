@@ -9,6 +9,14 @@ function ImageSlider(props) {
 
   const sliderCursor = useRef();
 
+  let sliderNav = props.sliderImages.map((value,index) => <div key={value} className={index === (count-1) ? 'oval active' : 'oval'} onClick={() => handleOvalClick(index, props)}></div>)
+
+
+  const handleOvalClick = (index, props) => {
+    setCount(index+1);
+    setImgSource(props.sliderImages[index]);
+
+};
   const handleMouseMove = (e) => {
     
     setCoord({ clientX: e.pageX, clientY: e.pageY });
@@ -25,6 +33,8 @@ function ImageSlider(props) {
 
     if (count < props.sliderImages.length) {
       setImgSource(props.sliderImages[count]);
+
+
     } else {
       setCount(1);
       setImgSource(props.sliderImages[0]);
@@ -45,11 +55,13 @@ function ImageSlider(props) {
   return (
     <>
       {/* <div style = {style} onClick = { e => { const newStyle =  setCoordinates(e.target.pageX, e.target.pageY); setStyle(newStyle); }}></div> */}
-      <div  className="image-slider" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} onClick={() => imageSliderChange(props)}>
+      <div className={`image-slider ${props.mainImageContainer}`} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} onClick={() => imageSliderChange(props)}>
         <div ref={sliderCursor} className="slider-cursor">{count}/{props.sliderImages.length}</div> 
-        <img className={props.mainImageContainer} src={imgSource}  alt="text" id="image"
+        <img className={props.mainImageClassName} src={imgSource}  alt="text" id="image"
         ></img>
+       
       </div>
+      <div className="sliderNav">{sliderNav}</div>
     </>
   );
 

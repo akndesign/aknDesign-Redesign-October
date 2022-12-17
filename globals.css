@@ -22,7 +22,7 @@ html,body{
 @font-face {
   font-family: "Blogh";
   font-weight: 1 400; 
-  src: url("./dist/Blogh.b299a7fc.otf") format("opentype");
+  src: url("./dist/fonts/Blogh.otf") format("opentype");
 } 
 
 @font-face {
@@ -71,6 +71,13 @@ html,body{
   font-weight: 1 1000;
   src: url("./dist/fonts/RecklessTRIAL-LightItalic.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Reckless-Light-Italic";
+  font-weight: 1 1000;
+  src: url("./dist/fonts/RecklessTRIAL-LightItalic.woff") format("woff");
+}
+
 
 @font-face {
   font-family: "GTAlpinaTrial-Medium";
