@@ -23,7 +23,7 @@ function EasterEgg(props) {
         >
           <span>What's here?</span>
           <div className="googley-eyes">
-            {/* <img className="cave" src="../img/cave-eyes-02.svg"></img> */}
+            {/* <img className="cave" src="../../img/cave-eyes-02.svg"></img> */}
 
             <Eyes></Eyes>
           </div>

@@ -98,15 +98,15 @@ function Home(props) {
       })
     },  []);
 
-  //  const copytoClipboard = (e) => {
-  //     e.preventDefault();
-  //     lottie.play("stars")
-  //     navigator.clipboard.writeText('alexander@akndesign.com')
-  //     console.log('User selected copy to clipboard');
-  //     setButtonText("Email Copied!");
-  //     setTimeout(()=>{setbuttonAnimation("")}, 1000)
-  //     setTimeout(()=>{setButtonText('Ready to Hire'); setbuttonAnimation("hide")}, 3350)
-  //   }
+   const copytoClipboard = (e) => {
+      e.preventDefault();
+      lottie.play("stars")
+      navigator.clipboard.writeText('alexander@akndesign.com')
+      console.log('User selected copy to clipboard');
+      setButtonText("Email Copied!");
+      setTimeout(()=>{setbuttonAnimation("")}, 1000)
+      setTimeout(()=>{setButtonText('Ready to Hire'); setbuttonAnimation("hide")}, 3350)
+    }
 
 
   return (
@@ -122,12 +122,12 @@ function Home(props) {
         <div className="col1"></div>
         <div className="col3">
           <div className="nav-container roobert-medium-vermilion-25px">
-          <div className="akndesign_logo_white_retina-01"><img src="../img/akndesign_logo_white_retina-01.svg" /></div>
+          <div className="akndesign_logo_white_retina-01"><img src="./img/akndesign_logo_white_retina-01.svg"/></div>
           <div className="nav roobert-medium-vermilion-25px">
             <div className={`localtime ${twentyFourHoursEffect >= 0 && twentyFourHoursEffect <= 6  ? "nighttime" : ""}`}>{hoursEffect}<div className="tick">:</div>{minutesEffect} 
               <div className="sunOrMoonState" >
-                   <img ref={dayOrNight} className={`${setAttitudeEffect}`} src={`../img/${setAttitudeEffect}.svg`}></img> 
-                   {/* <img className="loading down-animation" src="../img/loading.svg"></img> */}
+                   <img ref={dayOrNight} className={`${setAttitudeEffect}`} src={`./img/${setAttitudeEffect}.svg`}></img> 
+                   {/* <img className="loading down-animation" src="../../img/loading.svg"></img> */}
               </div>
             </div>
             <div className="boston-ma-us "> Boston, MA, USA </div>
@@ -143,7 +143,7 @@ function Home(props) {
             </div>
           <div className="col2">
           <div ref={containerOne} className="illustration"></div> 
-          {/* <img className="illustration" src={"../img/illustration of me-05.svg"}></img>    */}
+          {/* <img className="illustration" src={"../../img/illustration of me-05.svg"}></img>    */}
           <div className="hi-its-alexander-n grow-rotate">
           <div className="hi-its-alexander-n-1 roobert-medium-vermilion-94px">I'm Alexander Neumann, <br></br>a designer and coder </div>
          
@@ -154,7 +154,7 @@ function Home(props) {
             
             {/*<div className="recent-work about">Recent Work</div>*/}
             {/* <div className="flower-group grow-rotate">
-              <div className="flower breathing"><img src="../img/flower-outline.svg"/></div>
+              <div className="flower breathing"><img src="../../img/flower-outline.svg"/></div>
             </div> */}
               
             </div>
@@ -163,7 +163,7 @@ function Home(props) {
             <div className="reckless-light-vermilion-36px">I examine joy, play and discovery in my work</div>
        
              
-              {/* <div className="flower breathing"><div className="roobert-medium-vermilion-25px wiggle-chars">Continue</div><img src="../img/flower-outline.svg"/></div> */}
+              {/* <div className="flower breathing"><div className="roobert-medium-vermilion-25px wiggle-chars">Continue</div><img src="../../img/flower-outline.svg"/></div> */}
             
             </div>
             <div className="arrow-button wiggle-chars ">
