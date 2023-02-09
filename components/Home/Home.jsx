@@ -98,15 +98,15 @@ function Home(props) {
       })
     },  []);
 
-    copytoClipboard = (e) => {
-      e.preventDefault();
-      lottie.play("stars")
-      navigator.clipboard.writeText('alexander@akndesign.com')
-      console.log('User selected copy to clipboard');
-      setButtonText("Email Copied!");
-      setTimeout(()=>{setbuttonAnimation("")}, 1000)
-      setTimeout(()=>{setButtonText('Ready to Hire'); setbuttonAnimation("hide")}, 3350)
-    }
+  //  const copytoClipboard = (e) => {
+  //     e.preventDefault();
+  //     lottie.play("stars")
+  //     navigator.clipboard.writeText('alexander@akndesign.com')
+  //     console.log('User selected copy to clipboard');
+  //     setButtonText("Email Copied!");
+  //     setTimeout(()=>{setbuttonAnimation("")}, 1000)
+  //     setTimeout(()=>{setButtonText('Ready to Hire'); setbuttonAnimation("hide")}, 3350)
+  //   }
 
 
   return (
@@ -132,7 +132,7 @@ function Home(props) {
             </div>
             <div className="boston-ma-us "> Boston, MA, USA </div>
             <div className="cta-hiring">
-            <div className="roobert-medium-vermilion-25px button-pill-red wiggle-chars pushme" onClick={copytoClipboard}> <span className="inner">{buttonText}</span></div> 
+            <div className="roobert-medium-vermilion-25px button-pill-red wiggle-chars pushme"> <span className="inner">{buttonText}</span></div> 
             <div ref={containerTwo} className={`email ${buttonAnimation}`}></div>    
               </div>
               

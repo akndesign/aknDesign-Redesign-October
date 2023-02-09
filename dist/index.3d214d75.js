@@ -31448,20 +31448,15 @@ function Home(props) {
             animationData: require("../../dist/img/email-copied-stars-white-2.json")
         });
     }, []);
-    copytoClipboard = (e)=>{
-        e.preventDefault();
-        (0, _lottieWebDefault.default).play("stars");
-        navigator.clipboard.writeText("alexander@akndesign.com");
-        console.log("User selected copy to clipboard");
-        setButtonText("Email Copied!");
-        setTimeout(()=>{
-            setbuttonAnimation("");
-        }, 1000);
-        setTimeout(()=>{
-            setButtonText("Ready to Hire");
-            setbuttonAnimation("hide");
-        }, 3350);
-    };
+    //  const copytoClipboard = (e) => {
+    //     e.preventDefault();
+    //     lottie.play("stars")
+    //     navigator.clipboard.writeText('alexander@akndesign.com')
+    //     console.log('User selected copy to clipboard');
+    //     setButtonText("Email Copied!");
+    //     setTimeout(()=>{setbuttonAnimation("")}, 1000)
+    //     setTimeout(()=>{setButtonText('Ready to Hire'); setbuttonAnimation("hide")}, 3350)
+    //   }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _easterEggDefault.default), {}, void 0, false, {
@@ -31550,7 +31545,6 @@ function Home(props) {
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "roobert-medium-vermilion-25px button-pill-red wiggle-chars pushme",
-                                                        onClick: copytoClipboard,
                                                         children: [
                                                             " ",
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31559,7 +31553,7 @@ function Home(props) {
                                                             }, void 0, false, {
                                                                 fileName: "components/Home/Home.jsx",
                                                                 lineNumber: 135,
-                                                                columnNumber: 123
+                                                                columnNumber: 97
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
