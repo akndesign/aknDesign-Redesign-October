@@ -26,4 +26,4 @@ npm run build
 
 Edit README and replace `myorg` and `myrepo` for one-click deploy
 
-[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/myorg/myrepo)
+[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/akndesign/aknDesign-Redesign-October)
