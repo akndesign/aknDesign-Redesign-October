@@ -1,0 +1,50 @@
+//import fuinctions
+
+@import '../../styles/functions.scss';
+
+.header {
+	padding-left: clamp-font(20, 120, 500, 1920);
+	padding-right: clamp-font(20, 120, 500, 1920);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: var(--color-azure);
+
+	.solar {
+		opacity: 0;
+	}
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	ul {
+		display: flex;
+		gap: 32px;
+		align-items: center;
+
+		li {
+			color: var(--color-vermilion);
+			font-size: clamp-font(16, 24, 500, 1920);
+			font-family: var(--font-roobert-regular);
+
+			&:last-child {
+				@include breakpoint('md') {
+                    display: none;
+                }
+			}
+
+			&:not(:last-child):not(:nth-last-child(2)) {
+				@media screen and (max-width: 768px) {
+					display: none;
+				}
+			}
+		}
+	}
+
+    .time {
+        display: flex;
+        gap: 16px;
+    }
+}

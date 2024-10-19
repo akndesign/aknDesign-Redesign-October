@@ -1,0 +1,41 @@
+@import '../../styles/functions.scss';
+
+%btnDefault {
+	--btn-padding-y: clamp-font(8, 16, 500, 1920);
+	--btn-padding-x: clamp-font(16, 20, 500, 1920);
+	padding: clamp-font(8, 16, 500, 1920) clamp-font(16, 20, 500, 1920);
+	border-radius: 999px;
+	border-style: solid;
+	color: var(--color-vermilion);
+	font-size: clamp-font(14, 24, 500, 1920);
+	line-height: 1;
+	border-width: clamp-font(2, 3, 500, 1920);
+	font-family: var(--font-roobert-regular);
+}
+
+.btn-primary {
+	@extend %btnDefault;
+	border-color: var(--color-vermilion);
+	color: var(--color-vermilion);
+}
+
+.btn-secondary {
+	@extend %btnDefault;
+	color: var(--color-azure);
+	border-color: var(--color-azure);
+}
+
+.btn-default {
+	@extend %btnDefault;
+	border: unset;
+	color: var(--color-azure);
+	background-color: var(--color-vermilion);
+	display: inline-flex;
+}
+
+.btn-icon {
+	// gap: clamp-font(8, 16, 500, 1920);
+	& > i {
+		margin-left: clamp-font(8, 16, 500, 1920);
+	}
+}

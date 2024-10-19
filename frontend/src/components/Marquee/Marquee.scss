@@ -1,0 +1,46 @@
+@import '../../styles/functions.scss';
+.marquee {
+	--marquee-padding: clamp-font(20, 120, 500, 1920);
+	background-color: #d8bfd8;
+	padding: clamp-font(24, 36, 500, 1920) 0;
+	overflow-x: hidden;
+
+	* {
+		color: var(--color-vermilion);
+	}
+
+	&-inner {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		white-space: nowrap;
+		gap: 40px;
+
+		.title {
+			// margin-right: 20px;
+			span {
+				margin-right: 40px;
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: clamp-font(24, 24, 375, 500);
+			}
+		}
+
+
+
+		& > span {
+			display: flex;
+			gap: 20px;
+			// margin-right: 20px;
+		}
+
+		.icon {
+			display: inline;
+
+            @media screen and (max-width: 768px) {
+				width: clamp-font(20, 40, 500, 1920);
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@import '../../styles/functions.scss';
+
+.banner {
+	text-align: center;
+    padding-bottom: clamp-font(64, 94, 500, 1920);
+	background-color: var(--color-azure);
+    border-radius: 0 0 var(--section-border-radius) var(--section-border-radius);
+
+	* {
+		color: var(--color-vermilion);
+	}
+
+	.lottie {
+		aspect-ratio: 380 / 320;
+		max-width: clamp-font(180, 380, 500, 1920);
+		margin: 0 auto;
+        margin-bottom: clamp-font(40, 50, 500, 1920);
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+        gap: clamp-font(10, 40, 500, 1920);
+
+        align-items: center;
+	}
+}

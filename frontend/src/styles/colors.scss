@@ -1,0 +1,42 @@
+$colors: (
+	provincial-pink: #fff7f1,
+	vermilion: #ff4501,
+	'azure': azure,
+	neon-green: #7fffd4,
+	purple: #d8bfd8,
+	'white': #ffffff,
+);
+
+// generate classes
+@each $color, $value in $colors {
+	.#{$color} {
+		color: $value !important;
+	}
+	.text-#{$color} {
+		color: $value !important;
+	}
+	.bg-#{$color} {
+		background-color: $value !important;
+	}
+	[data-bg='bg-#{$color}'] {
+		background-color: $value !important;
+	}
+
+	//data bg data-bg='bg-#{$color}/50' is opacity 0.5
+	// create loop from 0 to 100
+	@for $i from 0 through 100 {
+		[data-bg='bg-#{$color}/#{$i}'] {
+			background-color: rgba($value, $i / 100) !important;
+		}
+	}
+}
+
+:root {
+    // seting up css variables
+    // example usage var(--color-vermilion)
+
+	@each $color, $value in $colors {
+		--#{$color}: #{$value};
+		--color-#{$color}: #{$value};
+	}
+}

@@ -1,0 +1,34 @@
+@import '../../styles/functions.scss';
+.snackbar {
+	--snackbar-height: clamp-font(40, 100, 500, 1920);
+	background-color: var(--color-vermilion);
+	border-radius: var(--section-border-radius);
+	display: flex;
+	// height: var(--snackbar-height);
+	padding-top: clamp-font(12, 24, 500, 1920);
+	padding-bottom: clamp-font(12, 24, 500, 1920);
+	display: flex;
+	justify-content: center;
+
+	button {
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		padding-right: 0;
+		position: relative;
+		padding-right: 80px;
+	}
+
+	* {
+		color: var(--color-azure);
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		padding: 60px;
+		align-items: center;
+		justify-content: center;
+	}
+}

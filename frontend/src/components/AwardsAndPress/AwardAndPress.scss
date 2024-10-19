@@ -1,0 +1,53 @@
+@import '../../styles/functions.scss';
+
+.award-and-press {
+	padding-left: clamp-font(20, 70, 500, 1920);
+	padding-right: clamp-font(20, 70, 500, 1920);
+	background-color: var(--color-white);
+
+	&__item {
+		padding-top: clamp-font(20, 70, 500, 1920);
+		padding-bottom: clamp-font(20, 50, 500, 1920);
+		display: flex;
+		align-items: center;
+		width: 100%;
+		cursor: pointer;
+		border-bottom: 1px solid var(--color-vermilion);
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			align-items: flex-start;
+            gap: 20px;
+
+            h2, .award-and-press__info {
+                width: 100%;
+            }
+
+            .award-and-press__item-title {
+                width: 100%;
+            }
+		}
+
+		h2 {
+			width: 40%;
+			padding-right: clamp-font(20, 70, 500, 1920);
+		}
+		h3 {
+		}
+		i {
+			width: 10%;
+		}
+
+		h2,
+		h3,
+		i {
+			color: var(--color-vermilion);
+		}
+	}
+
+	&__info {
+		display: flex;
+		width: 60%;
+		gap: clamp-font(50, 150, 500, 1920);
+	}
+}

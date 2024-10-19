@@ -1,0 +1,68 @@
+// Function for creating clamp font-size or fluid typography or spacing
+$base-font-size: 16;
+
+@function clamp-font(
+	$min-font-size-px,
+	$max-font-size-px,
+	$min-viewport,
+	$max-viewport
+) {
+	$slope: ($max-font-size-px - $min-font-size-px) /
+		($max-viewport - $min-viewport);
+	$intercept: $min-font-size-px - ($slope * $min-viewport);
+
+	// Convert slope to vw
+	$slope-vw: $slope * 100;
+
+	// Convert px to rem
+	$min-font-size-rem: $min-font-size-px / $base-font-size;
+	$max-font-size-rem: $max-font-size-px / $base-font-size;
+	$intercept-rem: $intercept / $base-font-size;
+
+	@return clamp(
+		#{$min-font-size-rem}rem,
+		#{$intercept-rem}rem + #{$slope-vw}vw,
+		#{$max-font-size-rem}rem
+	);
+}
+
+// Mixin for breakpoint media queries
+@mixin breakpoint($point) {
+	$breakpoints: (
+		'xs': 0,
+		'sm': 576px,
+		'md': 768px,
+		'lg': 992px,
+		'xl': 1200px,
+		'2xl': 1400px,
+		'3xl': 1600px,
+		'4xl': 1920px,
+	);
+
+	$breakpoint: map-get($breakpoints, $point);
+
+	@if $breakpoint {
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	} @else {
+		@warn 'Invalid breakpoint: #{$point}.';
+	}
+}
+
+// example usage
+// .navbar {
+// 	width: var(--navbar-width);
+// 	height: 100vh;
+// 	position: fixed;
+// 	right: 0;
+// 	top: 0;
+// 	border-left: 1px solid var(--color-vermilion);
+//     background-color: var(--color-azure);
+//     padding-top: clamp-font(40, 80, 500, 1920);
+//     align-items: center;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+//     @include breakpoint('md') {
+//         padding-top: clamp-font(40, 80, 500, 1920);

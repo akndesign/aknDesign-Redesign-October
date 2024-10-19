@@ -1,0 +1,57 @@
+@import '../../styles/functions.scss';
+
+.sidebar {
+	z-index: 9999;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+.navbar {
+	width: var(--navbar-width);
+	height: 100vh;
+
+	border-left: 1px solid var(--color-vermilion);
+	background-color: var(--color-azure);
+	padding-top: clamp-font(40, 80, 500, 1920);
+	align-items: center;
+	flex-direction: column;
+	display: none;
+
+	@include breakpoint('md') {
+		display: flex;
+	}
+}
+
+.pacman-wrapper {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	.lane {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+		width: max-content;
+		height: max-content;
+		position: relative;
+
+		.dot {
+			width: 24px;
+			height: 24px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+
+			.dot-circle {
+				width: clamp-font(5, 10, 500, 1920);
+				height: clamp-font(5, 10, 500, 1920);
+				border-radius: 999px;
+				background-color: var(--color-vermilion);
+				display: flex;
+			}
+		}
+	}
+}

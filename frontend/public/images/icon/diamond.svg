@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="463px" height="198px" viewBox="0 0 463 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="Group" transform="translate(3.000000, 3.962000)">
+            <text id="Ready-to-Hire" font-family="RecklessTRIAL-HeavyItalic, Reckless TRIAL" font-size="45" font-style="italic" font-weight="800" letter-spacing="-0.592105263" fill="#FF4501">
+                <tspan x="89" y="110.038">Ready to Hire</tspan>
+            </text>
+            <path d="M231.629753,-1.63438991 L460.812159,98.8942171 L236.2751,192.617472 L-3.96778456,98.9226114 L231.629753,-1.63438991 Z" id="Fill-1" stroke="#FF4501" stroke-width="3" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

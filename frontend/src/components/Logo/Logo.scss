@@ -1,0 +1,6 @@
+@import '../../styles/functions.scss';
+
+.logo {
+    width: clamp-font(96, 180, 500, 1920);
+    height: clamp-font(54, 90, 500, 1920);
+}

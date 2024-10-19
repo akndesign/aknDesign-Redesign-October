@@ -1,0 +1,154 @@
+@import '../../styles/functions.scss';
+
+.portfolio {
+	padding: clamp-font(60, 80, 500, 1920) clamp-font(24, 60, 500, 1920)
+		clamp-font(60, 80, 500, 1920) clamp-font(24, 124, 500, 1920);
+	display: flex;
+	width: 100vw;
+	height: 100%;
+
+	@include breakpoint('md') {
+		width: calc(100vw - var(--navbar-width));
+	}
+
+	* {
+		color: var(--color-vermilion);
+	}
+
+	&-header {
+		&.bg-neon-green, &.bg-azure {
+			* {
+				color: var(--color-vermilion);
+			}
+		}
+
+		&.bg-vermilion{
+			* {
+				color: var(--color-white);
+			}
+		}
+	}
+
+	&-body {
+		&.bg-neon-green, &.bg-azure {
+			* {
+				color: var(--color-vermilion);
+			}
+		}
+
+		&.bg-vermilion{
+			* {
+				color: var(--color-white);
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column-reverse;
+		gap: clamp-font(20, 40, 500, 767);
+	}
+
+	* {
+		text-wrap: balance;
+	}
+	&-content {
+		display: flex;
+		flex: 0 0 50%;
+		flex-direction: column;
+		gap: clamp-font(24, 30, 500, 1920);
+		padding-right: clamp-font(0, 20, 500, 1920);
+
+		@media screen and (max-width: 768px) {
+			flex: 0 0 100%;
+		}
+
+		.quote {
+			display: flex;
+			flex-direction: column;
+			gap: clamp-font(24, 30, 500, 1920);
+		}
+	}
+
+	&-image {
+		flex: 0 0 50%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+
+		@media screen and (max-width: 768px) {
+			flex: 0 0 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 20px;
+		}
+	}
+}
+
+.portfolio-half {
+	display: flex;
+	// grid-template-columns: 1fr 1fr;
+	// height: 970px;
+
+
+	* {
+		color: var(--color-vermilion);
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.portfolio-content {
+		display: flex;
+		flex: 0 0 50%;
+		flex-direction: column;
+		// gap: clamp-font(24, 30, 500, 1920);
+		padding: 0;
+		gap: 0;
+
+		&.left {
+			flex-direction: row-reverse;
+		}
+
+		@media screen and (max-width: 768px) {
+			flex: 0 0 100%;
+		}
+
+		.quote {
+			display: flex;
+			flex-direction: column;
+			gap: clamp-font(24, 30, 500, 1920);
+		}
+
+		.portfolio-header {
+			border-radius: var(--section-border-radius);
+			width: 100%;
+			padding: clamp-font(20, 60, 500, 1920)
+				clamp-font(20, 120, 500, 1920);
+		}
+
+		.portfolio-body {
+			display: flex;
+			flex-direction: column;
+			gap: clamp-font(24, 30, 500, 1920);
+			border-radius: var(--section-border-radius);
+			padding: clamp-font(20, 120, 500, 1920);
+			align-items: flex-start;
+			height: 100%;
+		}
+	}
+	.portfolio-image {
+		border-radius: var(--section-border-radius);
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

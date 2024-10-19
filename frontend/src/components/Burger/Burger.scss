@@ -1,0 +1,33 @@
+@import '../../styles/functions.scss';
+.burger {
+	--burger-height: #{clamp-font(6, 12, 500, 1920)};
+	--burger-width: #{clamp-font(28, 52, 500, 1920)};
+	--burger-space: #{clamp-font(5, 10, 500, 1920)};
+	top: 80px;
+	left: 50%;
+	width: var(--burger-width);
+
+	cursor: pointer;
+
+	&-line {
+		width: 100%;
+		height: var(--burger-height);
+		background-color: var(--color-vermilion);
+		position: relative;
+		left: 0;
+		transform-origin: center center;
+
+		&:nth-child(1) {
+			margin-bottom: var(--burger-space);
+		}
+
+		&:nth-child(2) {
+			margin-bottom: var(--burger-space);
+		}
+
+		// &:nth-child(3) {
+		// top: calc((var(--burger-height) + var(--burger-space)) * 2);
+		// transform: translateY(-50%);
+		// }
+	}
+}

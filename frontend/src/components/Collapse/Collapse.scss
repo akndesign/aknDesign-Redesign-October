@@ -1,0 +1,20 @@
+.collapsible {
+	margin: 10px 0;
+}
+
+.collapsible-content {
+	height: 0;
+	overflow: hidden;
+}
+
+.collapsible-inner {
+	padding-top: 20px;
+}
+
+
+.collapsible-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}

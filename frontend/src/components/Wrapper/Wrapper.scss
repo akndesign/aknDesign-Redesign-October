@@ -1,0 +1,15 @@
+@import '../../styles/functions.scss';
+.main {
+    display: grid;
+    grid-template-columns: 100vw;
+    // grid-template-rows: auto;
+    grid-template-rows: auto;
+    max-width: 100vw;
+    width: 100vw;
+    
+
+    @include breakpoint('md'){
+        grid-template-columns: calc(100vw - var(--navbar-width)) var(--navbar-width);
+    }
+  }
+  
