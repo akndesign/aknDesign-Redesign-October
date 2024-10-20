@@ -1,7 +1,7 @@
 [build]
-  base = "frontend"           # Set the base directory to 'frontend' where Next.js resides.
-  publish = "frontend/.next"   # Publish the built files from the .next folder inside 'frontend'.
-  command = "npm run build"    # Command to build the Next.js app.
+  base = "frontend"           # Points to the 'frontend' folder where Next.js resides.
+  publish = ".next"            # Set to `.next` (relative to the base directory).
+  command = "npm run build"    # Builds the Next.js app.
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"  # Ensure Next.js works with Netlify properly.
+  package = "@netlify/plugin-nextjs"
