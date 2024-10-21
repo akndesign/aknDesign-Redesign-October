@@ -9,7 +9,7 @@ import gsap from 'gsap';
 
 interface ButtonProps {
     variant: 'primary' | 'secondary' | 'default' | 'nostyle';
-    onClick?: () => void;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => void; // Allow MouseEvent here
     href?: string;
     children: React.ReactNode;
     icon?: string;
@@ -20,7 +20,7 @@ interface ButtonProps {
     split?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon, magnetic, className, submit, split }) => {
+const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon, magnetic, className, submit, split, target }) => {
     const submitButton = submit ? 'submit' : 'button';
     const ref = React.useRef<HTMLButtonElement | HTMLAnchorElement>(null);
 
@@ -91,6 +91,7 @@ const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon,
                     target='_blank'
                     rel='noopener'
                     ref={ref as React.RefObject<HTMLAnchorElement>}
+                    data-target={target}
                 >
                     {children}
                 </Link>
@@ -100,7 +101,7 @@ const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon,
 
     if (href) {
         return (
-            <Link href={href} className={classes} target='_blank' rel='noopener' ref={ref as React.RefObject<HTMLAnchorElement>}
+            <Link href={href} className={classes} target='_blank' rel='noopener' ref={ref as React.RefObject<HTMLAnchorElement>} data-target={target}
             >
                 {children}
             </Link>
@@ -115,6 +116,7 @@ const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon,
                     className={classes}
                     type={submitButton}
                     ref={ref as React.RefObject<HTMLButtonElement>}
+                    data-target={target}
                 >
                     {children}
                 </button>
@@ -128,6 +130,7 @@ const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon,
             className={classes}
             type={submitButton}
             ref={ref as React.RefObject<HTMLButtonElement>}
+            data-target={target}
         >
             {children}
         </button>

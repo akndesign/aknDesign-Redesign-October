@@ -44,7 +44,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ data }) => {
             <div className="portfolio-image">
                 {images.length > 1 ? (
                     <Swiper
-                        navigation
+                        // navigation
                         pagination={{ type: "bullets", clickable: true }}
                         autoplay={{ delay: 3000 }}
                         loop={true}

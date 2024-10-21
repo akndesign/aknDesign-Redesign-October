@@ -57,11 +57,12 @@ export const PortfolioHalf: React.FC<PortfolioProps> = ({ data }) => {
             <div className="portfolio-image">
                 {images.length > 1 ? (
                     <Swiper
-                        navigation
+                        // navigation
                         pagination={{ type: "bullets", clickable: true }}
                         autoplay={{ delay: 3000 }}
                         loop={true}
                         modules={[Autoplay, Navigation, Pagination]}
+                        className='h-full'
                     >
                         {images.map((image: any, index: number) => (
                             <SwiperSlide key={index}>

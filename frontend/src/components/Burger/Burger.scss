@@ -9,6 +9,15 @@
 
 	cursor: pointer;
 
+	@media screen and (max-width: 768px) {
+		position: relative;
+		// top: 0;
+		// left: 0;
+		top: unset;
+		left: unset;
+		z-index: 9999;
+	}
+
 	&-line {
 		width: 100%;
 		height: var(--burger-height);
