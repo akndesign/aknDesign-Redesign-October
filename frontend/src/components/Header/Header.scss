@@ -12,6 +12,26 @@
 	.solar {
 		opacity: 0;
 	}
+
+	.time {
+		font-size: 1.2rem;
+		font-weight: bold;
+		transition: all 0.5s ease;
+	
+		&.glow {
+			// color: #00ff00; // Neon green color, adjust as needed
+			text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f1c40f;
+		}
+	}
+	
+	.solar {
+		margin-left: 10px;
+	
+		// .icon-moon {
+		// 	color: #f1c40f; // Yellowish moon color
+		// }
+	}
+	
 }
 
 .header-wrapper {

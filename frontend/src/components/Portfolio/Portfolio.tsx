@@ -31,10 +31,12 @@ export const Portfolio: React.FC<PortfolioProps> = ({ data }) => {
                 </div>
                 <div className="quote">
                     <div className='h4'>
-                        <PortableText
-                            value={data.description.richText}
-                            components={PortableTextComponent}
-                        />
+                        {
+                            data.quote && <PortableText
+                                value={data.quote.richText}
+                                components={PortableTextComponent}
+                            />
+                        }
                     </div>
                     {
                         data.quoteAuthor && <p className='h4'>- {data.quoteAuthor}</p>
