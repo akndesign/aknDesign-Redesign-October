@@ -69,7 +69,7 @@ export const Header = () => {
                         <li className={`time ${isNight ? 'glow' : ''}`}>
                             <span ref={refTime}>{time}</span>
                             <span ref={refSolar} className='solar'>
-                                <i className={`icon-akn ${iconClass} animate-bounce`}></i>
+                                <i className={`icon-akn ${iconClass}`}></i>
                             </span>
                         </li>
                         <li><span>Seattle, WA, USA</span></li>
