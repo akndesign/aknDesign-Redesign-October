@@ -23,6 +23,7 @@
     "next-sanity": "^9.4.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-fast-marquee": "^1.6.5",
     "react-matter-js": "^1.0.5",
     "split-type": "^0.3.4",
     "swiper": "^11.1.9",

@@ -1,31 +1,35 @@
 
-import { Marquee } from '@/components/Marquee/Marquee';
+// import { Marquee } from '@/components/Marquee/Marquee';
+import Marquee from "react-fast-marquee";
 import React from 'react';
 import './Contact.scss';
 import Button from '@/components/Button/Button';
 import Link from 'next/link';
 import Collapse from '@/components/Collapse/Collapse';
 import Image from 'next/image';
-
+import '../../components/Marquee/Marquee.scss';
 const Contact: React.FC = () => {
 
     return (
         <>
 
             <section className="contact" id="contact" data-section="contact">
-                <Marquee>
-                    {
-                        Array.from({ length: 20 }).map((_, i) => (
-                            <span className='title' key={`contact-${i}`}>
-                                <span>CONTACT NOW</span>
-                                <span>
-                                    <Image src="/images/icon/paperplane.svg" alt="paperplane" width={72} height={87} className='icon' />
+
+                <Marquee className="marquee">
+                    <div className="marquee-inner">
+                        {
+                            Array.from({ length: 20 }).map((_, i) => (
+                                <span className='title' key={`contact-${i}`}>
+                                    <span>CONTACT NOW</span>
+                                    <span>
+                                        <Image src="/images/icon/paperplane.svg" alt="paperplane" width={72} height={87} className='icon' />
+                                    </span>
+                                    <span>ALEXANDER@AKNDESIGN.COM</span>
                                 </span>
-                                <span>ALEXANDER@AKNDESIGN.COM</span>
-                            </span>
-                        ))
-                    }
+                            ))
+                        }</div>
                 </Marquee>
+
                 <div className="contact-wrapper">
                     <p className='h2'> My client-based work has received the attention of <Link href={'#'} className='link'><span><Button variant='default' split={true}> Buzzfeed <i className='icon-akn icon-buzzfeed'></i></Button></span></Link>, <Link href={'#'} className='link'><span><Button variant='default' split={true}>the Globe and Mail <i className='icon-akn icon-maple-leave'></i></Button></span></Link>,
                         and Wallpaper* Magazine. </p>

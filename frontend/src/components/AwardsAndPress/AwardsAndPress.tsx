@@ -1,19 +1,23 @@
 
 import { data } from './AwardsAndPress.copy';
 import './AwardAndPress.scss';
-import { Marquee } from '../Marquee/Marquee';
+// import { Marquee } from '../Marquee/Marquee';
+import Marquee from "react-fast-marquee";
+import '../../components/Marquee/Marquee.scss';
 
 const AwardsAndPress = () => {
     return (
         <>
-            <Marquee>
-                {
-                    Array.from({ length: 30 }).map((_, i) => (
-                        <span className='title' key={i}>
-                            <span>AWARD & PRESS</span>
-                        </span>
-                    ))
-                }
+            <Marquee className="marquee">
+                <div className="marquee-inner">
+                    {
+                        Array.from({ length: 30 }).map((_, i) => (
+                            <span className='title' key={i}>
+                                <span>PRESS & AWARDS •</span>
+                            </span>
+                        ))
+                    }
+                </div>
             </Marquee>
             <div className="award-and-press">
 
