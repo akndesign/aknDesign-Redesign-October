@@ -42,14 +42,14 @@ h3 {
 	font-family: var(--font-reckless-light);
 	font-weight: 300;
 	line-height: 1.2;
-	font-size: clamp-font(32, 48, 500, 1920);
+	font-size: clamp-font(30, 48, 768, 1920);
 }
 
 .h4,
 h4 {
 	font-family: var(--font-reckless-light);
 	// font-size: var(--font-size-l);
-	font-size: clamp-font(24, 36, 500, 1920);
+	font-size: clamp-font(23, 36, 768, 1920);
 
 	font-weight: 500;
 	line-height: 1.2;

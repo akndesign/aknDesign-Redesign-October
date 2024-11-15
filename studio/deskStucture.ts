@@ -19,6 +19,19 @@ export const myStructure = (S: any, context: any) =>
         S,
         context,
       }),
+      orderableDocumentListDeskItem({
+        type: 'awards',
+        title: 'awards',
+        icon: GrMoney,
+        id: 'orderable-en-awards',
+        params: {
+          lang: 'en_US',
+        },
+        createIntent: false,
+        menuItems: [],
+        S,
+        context,
+      }),
       S.listItem()
         .title('Settings')
         .icon(GrSettingsOption)
@@ -41,9 +54,13 @@ export const myStructure = (S: any, context: any) =>
               // S.listItem().title('Menu').child(S.document().schemaType('menu').documentId('menu')),
             ]),
         ),
+      S.listItem()
+        .title('about')
+        .icon(GrSettingsOption)
+        .child(S.document().schemaType('about').documentId('about')),
 
       // ...S.documentTypeListItems().filter(
-      //   (listItem: any) => !['siteSettings'].includes(listItem.getId()),
+      //   (listItem: any) => !['settings','works','homepage'].includes(listItem.getId()),
       // ),
     ])
 
@@ -56,6 +73,20 @@ export const myDeskToolStructure = (S: any, context: any) =>
         title: 'Works',
         icon: GrMoney, // Provide your own icon
         id: 'orderable-en-projects', // Required if using multiple lists of the same 'type'
+        // filter: `__i18n_lang == $lang`, // Add a filter if needed
+        params: {
+          lang: 'en_US',
+        },
+        createIntent: false, // Do not add an option for item creation
+        menuItems: [], // Allow an array of `S.menuItem()` to be injected to orderable document list menu
+        S,
+        context,
+      }),
+      orderableDocumentListDeskItem({
+        type: 'awards',
+        title: 'awards',
+        icon: GrMoney, // Provide your own icon
+        id: 'orderable-en-awards', // Required if using multiple lists of the same 'type'
         // filter: `__i18n_lang == $lang`, // Add a filter if needed
         params: {
           lang: 'en_US',

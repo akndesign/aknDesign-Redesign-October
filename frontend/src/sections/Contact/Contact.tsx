@@ -1,21 +1,45 @@
 
 // import { Marquee } from '@/components/Marquee/Marquee';
 import Marquee from "react-fast-marquee";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Contact.scss';
 import Button from '@/components/Button/Button';
 import Link from 'next/link';
 import Collapse from '@/components/Collapse/Collapse';
 import Image from 'next/image';
 import '../../components/Marquee/Marquee.scss';
+import { client } from "@/libs/sanity/sanity";
+
 const Contact: React.FC = () => {
+
+    interface PortfolioItem {
+        _id: string;
+        title: string;
+        // Add other relevant fields based on your Sanity schema
+    }
+
+
+    const [data, setData] = useState<PortfolioItem[] | null>(null);
+    useEffect(() => {
+
+        const categoriesQuery = ` *[_type == "works"]|order(orderRank)`;
+        const fetchData = async () => {
+            try {
+                const response = await client.fetch(categoriesQuery);
+                setData(response);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            } finally {
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <>
-
             <section className="contact" id="contact" data-section="contact">
-
-                <Marquee className="marquee">
+                <Marquee className="marquee" speed={100}>
                     <div className="marquee-inner">
                         {
                             Array.from({ length: 20 }).map((_, i) => (

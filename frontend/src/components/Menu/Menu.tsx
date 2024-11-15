@@ -36,6 +36,24 @@ export const Menu: React.FC = () => {
             if (!a) return;
 
             console.log(a)
+            //close the menu
+            setIsMenuOpen(false);
+
+            const tl = gsap.timeline({
+                defaults: {
+                    duration: 0.3,
+                    ease: 'power2.inOut'
+                },
+            });
+            tl
+                .to('.burger-line:nth-child(1)', { rotation: 0, duration: 0.3, ease: 'power2.inOut', }, 0)
+                .to('.burger-line:nth-child(2)', { rotation: 0, duration: 0.3, ease: 'power2.inOut' }, 0)
+                .to('.burger-line:nth-child(3)', { rotation: 0, duration: 0.3, ease: 'power2.inOut', }, 0)
+                .to('.burger-line:nth-child(2)', { scaleX: 1, duration: 0.3, ease: 'power2.inOut' })
+                .add('add')
+                .to('.burger-line:nth-child(1)', { yPercent: 0, duration: 1, rotation: 0, ease: 'elastic.out(1,0.5)' }, 'add')
+                .to('.burger-line:nth-child(3)', { yPercent: 0, duration: 1, rotation: 0, ease: 'elastic.out(1,0.5)' }, 'add')
+
             gsap.to(window, {
                 duration: 1,
                 scrollTo: {
@@ -44,8 +62,13 @@ export const Menu: React.FC = () => {
                     autoKill: false
                 }
             });
+
+
+
         }
     }
+
+    
 
     return (
         <div className={`${isMenuOpen ? 'open' : ''} menu`} ref={menuRef}>

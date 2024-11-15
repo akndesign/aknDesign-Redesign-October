@@ -8,7 +8,7 @@ import '../../components/Marquee/Marquee.scss';
 const AwardsAndPress = () => {
     return (
         <>
-            <Marquee className="marquee">
+            <Marquee className="marquee" speed={100}>
                 <div className="marquee-inner">
                     {
                         Array.from({ length: 30 }).map((_, i) => (

@@ -1,0 +1,63 @@
+@import '../../styles/functions.scss';
+
+.footer {
+	background-color: var(--color-vermilion);
+	padding: clamp-font(60, 120, 500, 1920);
+	display: flex;
+	flex-direction: column;
+	gap: clamp-font(60, 200, 500, 1920);
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: 1024px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	p {
+		color: var(--color-white);
+		font-size: clamp-font(12, 16, 500, 1920);
+		text-align: center;
+	}
+
+	.h1 {
+		font-size: clamp-font(32, 48, 500, 1920);
+	}
+
+	.left {
+		width: 50%;
+
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 60px;
+		}
+	}
+
+	ul {
+		@media screen and (max-width: 1024px) {
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+		}
+	}
+	.right {
+		display: flex;
+		width: 50%;
+		gap: clamp-font(20, 40, 500, 767);
+
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		* {
+			color: var(--color-white);
+		}
+	}
+}

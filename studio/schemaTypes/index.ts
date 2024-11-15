@@ -7,7 +7,10 @@ import contentComponent from '../schemas/objects/content'
 import richText from '../schemas/objects/richText'
 
 import works from '../schemas/documents/works'
-const Pages = [works]
+import homepage from '../schemas/documents/homepage'
+import awards from '../schemas/documents/awards'
+
+const Pages = [works, homepage,awards]
 
 const Settings = [siteSettings, link, image, navItems, text, richText, contentComponent]
 

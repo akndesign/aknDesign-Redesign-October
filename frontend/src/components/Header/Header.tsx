@@ -14,6 +14,26 @@ export const Header = () => {
     const refSolar = React.useRef<HTMLSpanElement>(null);
     const refTime = React.useRef<HTMLDivElement>(null);
 
+    // const updateTime = () => {
+    //     const options: Intl.DateTimeFormatOptions = {
+    //         hour: 'numeric',
+    //         minute: 'numeric',
+    //         hour12: true,
+    //         timeZone: 'America/Los_Angeles',
+    //     };
+
+    //     const seattleTime = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    //     setTime(seattleTime);
+
+    //     const hours = new Date().getUTCHours() - 7; // Convert UTC to Seattle time (UTC-7)
+    //     if (hours >= 6 && hours < 18) {
+    //         setIconClass('icon-sun');
+    //         setIsNight(false);
+    //     } else {
+    //         setIconClass('icon-moon');
+    //         setIsNight(true); // Set to night to trigger the glow
+    //     }
+    // };
     const updateTime = () => {
         const options: Intl.DateTimeFormatOptions = {
             hour: 'numeric',
@@ -21,17 +41,20 @@ export const Header = () => {
             hour12: true,
             timeZone: 'America/Los_Angeles',
         };
-
+    
         const seattleTime = new Intl.DateTimeFormat('en-US', options).format(new Date());
         setTime(seattleTime);
-
+    
         const hours = new Date().getUTCHours() - 7; // Convert UTC to Seattle time (UTC-7)
-        if (hours >= 6 && hours < 18) {
+        if (hours >= 0 && hours < 6) {
+            setIconClass('icon-moon');
+            setIsNight(true); // Enable glow
+        } else if (hours >= 6 && hours < 18) {
             setIconClass('icon-sun');
-            setIsNight(false);
+            setIsNight(false); // Disable glow
         } else {
             setIconClass('icon-moon');
-            setIsNight(true); // Set to night to trigger the glow
+            setIsNight(false); // Normal moon icon, no glow
         }
     };
 

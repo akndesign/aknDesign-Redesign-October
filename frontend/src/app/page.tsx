@@ -17,6 +17,7 @@ import { useEffect, useState } from "react";
 import { client } from "@/libs/sanity/sanity";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import AwardsAndPress from "@/components/AwardsAndPress/AwardsAndPress";
+import Footer from "@/components/Footer/Footer";
 
 // Define the structure of your data
 interface PortfolioItem {
@@ -53,6 +54,7 @@ const Home: NextPage = () => {
     <Wrapper>
 
       <div className="main-wrapper">
+
         <Menu />
         <Snackbar />
         <Header />
@@ -60,6 +62,8 @@ const Home: NextPage = () => {
         <Contact />
         <Works data={data} />
         <AwardsAndPress />
+        <Footer />
+
       </div>
       {data && <Sidebar />}
     </Wrapper>

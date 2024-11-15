@@ -13,19 +13,49 @@
 		opacity: 0;
 	}
 
+	// .time {
+	// 	font-size: 1.2rem;
+	// 	font-weight: bold;
+	// 	transition: all 0.5s ease;
+
+	// 	&.glow {
+	// 		// color: #00ff00; // Neon green color, adjust as needed
+
+	// 		span {
+	// 			&:first-child {
+	// 				text-shadow: 5px 3px 30px var(--vermilion);
+	// 				transition: text-shadow 1s ease-in 3s;
+	// 				transition-delay: 1s;
+	// 			}
+
+	// 			&:last-child {
+	// 				animation: moon-rise 2.5s ease forwards;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
 	.time {
 		font-size: 1.2rem;
 		font-weight: bold;
 		transition: all 0.5s ease;
 
-		&.glow {
-			// color: #00ff00; // Neon green color, adjust as needed
+		span {
+			font-family: var(--font-roobert-medium);
+			font-weight: 400;
+		}
 
+		&.glow {
 			span {
 				&:first-child {
-					text-shadow: 5px 3px 30px var(--vermilion);
-					transition: text-shadow 1s ease-in 3s;
-					transition-delay: 1s;
+					// Unified glow effect
+					color: var(--vermilion);
+					text-shadow:
+						0 0 8px rgba(255, 69, 0, 0.9),
+						0 0 15px rgba(255, 69, 0, 0.7),
+						0 0 30px rgba(255, 69, 0, 0.5);
+					-webkit-text-stroke: 0.5px rgba(255, 69, 0, 0.4); // For Safari boldness
+					font-smoothing: antialiased; // Improves rendering
 				}
 
 				&:last-child {
@@ -34,7 +64,6 @@
 			}
 		}
 	}
-
 	.solar {
 		margin-left: 10px;
 

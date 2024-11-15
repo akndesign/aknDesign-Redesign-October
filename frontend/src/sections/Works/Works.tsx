@@ -15,7 +15,7 @@ const Works: React.FC<WorksProps> = ({ data }) => {
         <>
 
             <section className="works" data-section="works" id="works">
-                <Marquee className="marquee">
+                <Marquee className="marquee" speed={100}>
                     <div className="marquee-inner">
                         {
                             Array.from({ length: 20 }).map((_, i) => (
