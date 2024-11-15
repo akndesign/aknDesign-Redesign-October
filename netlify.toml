@@ -5,3 +5,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://akndesign.com/*"
+  to = "https://beta.akndesign.com/:splat"
+  status = 301
+  force = true
