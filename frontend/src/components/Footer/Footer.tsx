@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                         <h3 className='h1'>Contact Me</h3>
                         <ul>
                             <li>
-                                <Link href={'/'}>Email Me</Link>
+                                <Link href={'mailto:Alexander@akndesign.com'}>Email Me</Link>
                             </li>
                         </ul>
                     </div>
@@ -23,10 +23,10 @@ const Footer: React.FC = () => {
                         <h3 className='h1'>Stay in Touch</h3>
                         <ul>
                             <li>
-                                <Link href={'/'}>LinkedIn</Link>
+                                <Link href={'https://www.linkedin.com/in/akndesign'}>LinkedIn</Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Instagram</Link>
+                                <Link href={'https://www.instagram.com/akn.design'}>Instagram</Link>
                             </li>
                         </ul>
                     </div>
