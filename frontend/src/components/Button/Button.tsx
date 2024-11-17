@@ -48,6 +48,7 @@ const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon,
                 yPercent: (index) => index % 2 === 0 ? -8 : 8,
                 rotation: (index) => index % 2 === 0 ? 4 : -4,
                 ease: 'power1.out',
+                
             });
 
         };
