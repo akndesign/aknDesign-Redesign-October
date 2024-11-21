@@ -108,6 +108,26 @@
 	}
 }
 
+.copy-email-button {
+	.email-copied {
+		display: none !important;
+	}
+
+	.ready-to-hire {
+		display: inline-block !important
+	}
+
+	&.active {
+		.email-copied {
+			display: inline-block !important;
+		}
+
+		.ready-to-hire {
+			display: none !important;
+		}
+	}
+}
+
 @keyframes moon-rise {
 	0% {
 		opacity: 0%;

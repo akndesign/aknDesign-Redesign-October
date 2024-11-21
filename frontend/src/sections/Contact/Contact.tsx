@@ -62,12 +62,13 @@ const Contact: React.FC = () => {
 
 
                     <Collapse>
-                        <Collapse.Button>   <Button variant="secondary" icon="arrow-right" split={true}>
-                            Read More
-                        </Button></Collapse.Button>
+
                         <Collapse.Content>
                             <p className='h3'>I&apos;ve just completed a 6 month intensive coding bootcamp with General Assembly (November 2021, wrapping up May 28th, 2022). I&apos;m proficient in React, Node.Js, ExpressJS, MongoDB, SQL (Postgres), Python, and Django. Whilst Ruby isn&apos;t on my list, I&apos;m personally quite interested in further development.</p>
                         </Collapse.Content>
+                        <Collapse.Button>   <Button variant="secondary" icon="arrow-right" split={true}>
+                            Read More
+                        </Button></Collapse.Button>
                     </Collapse>
                 </div>
 

@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Logo } from '@/components/Logo/Logo';
 import Button from '@/components/Button/Button';
 import './Header.scss';
@@ -41,10 +41,10 @@ export const Header = () => {
             hour12: true,
             timeZone: 'America/Los_Angeles',
         };
-    
+
         const seattleTime = new Intl.DateTimeFormat('en-US', options).format(new Date());
         setTime(seattleTime);
-    
+
         const hours = new Date().getUTCHours() - 7; // Convert UTC to Seattle time (UTC-7)
         if (hours >= 0 && hours < 6) {
             setIconClass('icon-moon');
@@ -78,10 +78,41 @@ export const Header = () => {
         });
 
         tl.fromTo(refSolar.current, { y: 100, duration: 3, opacity: 0, ease: 'elastic.out(1,0.5)' }, { y: 0, opacity: 1 }, 0)
-          .fromTo(refTime.current, { opacity: 0 }, { opacity: 1 }, 0);
+            .fromTo(refTime.current, { opacity: 0 }, { opacity: 1 }, 0);
     }, {
         scope: refSolar,
     });
+
+    // Function to copy the email address to clipboard
+    const [buttonText, setButtonText] = useState<string>('Ready to Hire');
+    const [buttonAnimation, setButtonAnimation] = useState<string>('');  // Handle button animation state
+
+    const copyToClipboard = (e: React.MouseEvent) => {
+        e.preventDefault();
+        // lottie.play('stars'); // Play the lottie animation when the button is clicked
+
+        // Copy the email to clipboard
+        navigator.clipboard.writeText('alexander@akndesign.com')
+            .then(() => {
+                console.log('User selected copy to clipboard');
+                setButtonText('Email Copied!');
+                setButtonAnimation('active'); // Trigger animation state when copied
+
+                // Reset button text and animation after 1 second
+                setTimeout(() => {
+                    setButtonAnimation('');
+                }, 1000);
+
+                // Reset the button to initial state after 3.35 seconds
+                setTimeout(() => {
+                    setButtonText('Ready to Hire');
+                    setButtonAnimation('hide');
+                }, 3350);
+            })
+            .catch((err) => {
+                console.error('Failed to copy: ', err);
+            });
+    };
 
     return (
         <header className="header">
@@ -96,11 +127,15 @@ export const Header = () => {
                             </span>
                         </li>
                         <li><span>Seattle, WA, USA</span></li>
-                        <li><Button variant='default' split={true}>Ready to Hire</Button></li>
+                        <li>
+
+                            <Button variant='default' split={true} onClick={copyToClipboard} className={`copy-email-button ${buttonAnimation}`} ><span className={`ready-to-hire`}>Ready to Hire</span><span className={`email-copied`}>Email COpied</span></Button>
+                            
+                        </li>
                         <li><Burger /></li>
                     </ul>
                 </nav>
             </div>
-        </header>
+        </header >
     );
 };
