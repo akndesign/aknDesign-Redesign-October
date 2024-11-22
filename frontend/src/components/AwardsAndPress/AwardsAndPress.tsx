@@ -74,7 +74,7 @@ const AwardsAndPress = () => {
                                         value={item.description.richText}
                                         components={PortableTextComponent}
                                     />
-                                    <Link href={item.link} passHref>
+                                    <Link href={item.link} passHref target='_blank'>
                                         <i className='icon-akn icon-diagonal-arrow h3'></i>
                                     </Link>
                                 </div>

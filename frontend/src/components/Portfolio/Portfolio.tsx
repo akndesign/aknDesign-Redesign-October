@@ -17,6 +17,8 @@ interface PortfolioProps {
 export const Portfolio: React.FC<PortfolioProps> = ({ data }) => {
     // Ensure images is always an array
     const images = Array.isArray(data.images) ? data.images : [data.images];
+    const video = data.video;
+    
 
     return (
         <div className={`portfolio ${data.background}`}>
@@ -72,6 +74,15 @@ export const Portfolio: React.FC<PortfolioProps> = ({ data }) => {
                         height={592}
                     />
                 )}
+
+                {
+                    video && (
+                        <video controls>
+                            <source src={video} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    )
+                }
             </div>
         </div>
     );
