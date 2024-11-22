@@ -18,7 +18,6 @@ interface PortfolioProps {
 export const Portfolio: React.FC<PortfolioProps> = ({ data }) => {
     // Ensure images is always an array
     const images = Array.isArray(data.banner?.images) ? data.banner?.images : [data.banner?.images];
-    const video = data.banner?.video;
     const type = data.banner?.mediaType;
     let urlVideo = '';
     if (data.banner.video && data.banner.mediaType === "video") {
@@ -113,13 +112,14 @@ export const Portfolio: React.FC<PortfolioProps> = ({ data }) => {
                                     <Swiper
                                         // navigation
                                         pagination={{ type: "bullets", clickable: true }}
-                                        // autoplay={{ delay: 3000 }}
+                                        autoplay={{ delay: 3000 }}
                                         loop={true}
                                         modules={[Autoplay, Navigation, Pagination]}
-                                        className='h-full'
+                                        className='h-full w-full'
                                     >
                                         {images.map((image: any, index: number) => (
                                             <SwiperSlide key={index}>
+                                                {/* <p className='h-full w-full bg-red-200'>ASU</p> */}
                                                 <Image
                                                     src={urlFor(image).url() as string}
                                                     alt={data.title}
