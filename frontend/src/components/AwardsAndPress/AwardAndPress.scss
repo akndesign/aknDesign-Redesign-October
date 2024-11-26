@@ -49,5 +49,6 @@
 		display: flex;
 		width: 60%;
 		gap: clamp-font(50, 150, 500, 1920);
+		justify-content: space-between;
 	}
 }

@@ -44,18 +44,18 @@ const Contact: React.FC = () => {
                         {
                             Array.from({ length: 20 }).map((_, i) => (
                                 <span className='title' key={`contact-${i}`}>
-                                    <span>CONTACT NOW</span>
+                                    <span>CONTACT NOW  </span>
                                     <span>
                                         <Image src="/images/icon/paperplane.svg" alt="paperplane" width={72} height={87} className='icon' />
                                     </span>
-                                    <span>ALEXANDER@AKNDESIGN.COM</span>
+                                    <span>ALEXANDER@AKNDESIGN.COM • </span>
                                 </span>
                             ))
                         }</div>
                 </Marquee>
 
                 <div className="contact-wrapper">
-                    <p className='h2'> My client-based work has received the attention of <Link href={'#'} className='link'><span><Button variant='default' split={true}> Buzzfeed <i className='icon-akn icon-buzzfeed'></i></Button></span></Link>, <Link href={'#'} className='link'><span><Button variant='default' split={true}>the Globe and Mail <i className='icon-akn icon-maple-leave'></i></Button></span></Link>,
+                    <p className='h2'> My client-based work has received the attention of <Link href={'https://www.buzzfeednews.com/article/ryanmac/christopher-wylie-cambridge-analytica-scandal'} className='link'><span><Button variant='default' split={true}> Buzzfeed <i className='icon-akn icon-buzzfeed'></i></Button></span></Link>, <Link href={'https://www.theglobeandmail.com/politics/article-business-plan-hatched-by-christopher-wylie-sheds-light-on-whistle/'} className='link'><span><Button variant='default' split={true}>the Globe and Mail <i className='icon-akn icon-maple-leave'></i></Button></span></Link>,
                         and Wallpaper* Magazine. </p>
                     <p className='h3'>My freelance clients include Christopher Wylie
                         (Cambridge Analytica), Citymapper, and UsTwo.</p>
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
                         <Collapse.Content>
                             <p className='h3'>I&apos;ve just completed a 6 month intensive coding bootcamp with General Assembly (November 2021, wrapping up May 28th, 2022). I&apos;m proficient in React, Node.Js, ExpressJS, MongoDB, SQL (Postgres), Python, and Django. Whilst Ruby isn&apos;t on my list, I&apos;m personally quite interested in further development.</p>
                         </Collapse.Content>
-                        <Collapse.Button>   <Button variant="secondary" icon="arrow-right" split={true}>
+                        <Collapse.Button>   <Button variant="secondary" icon="arrow-right" split={true} className="mt-5">
                             Read More
                         </Button></Collapse.Button>
                     </Collapse>
