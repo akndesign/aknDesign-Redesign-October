@@ -1,9 +1,10 @@
 @import '../../styles/functions.scss';
 .marquee {
 	--marquee-padding: clamp-font(20, 120, 500, 1920);
-	background-color: #d8bfd8;
-	padding: clamp-font(24, 36, 500, 1920) 0;
+	background-color: #F4C2B5;
+	padding: clamp-font(12, 24, 500, 1920) 0;
 	overflow-x: hidden;
+	font-family: var(--font-instrument-serif);
 
 	* {
 		color: var(--color-vermilion);

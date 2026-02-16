@@ -1,4 +1,4 @@
-// File: /Users/dennissnov/upwork/ALEXANDER_NEUMANN/_CODE/aknDesign-Redesign-October/frontend/src/app/page.tsx
+// File: /Users/alexanderneumann/Desktop/aknDesign-Redesign-October-2022/aknDesign-ReDesign-October/frontend/src/app/page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

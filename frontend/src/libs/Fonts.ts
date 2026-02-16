@@ -16,6 +16,22 @@ export const RoobertTRIAL = localFont({
 	],
 });
 
+export const InstrumentSerif = localFont({
+  variable: '--font-instrument-serif',
+  src: [
+    {
+      path: '../../public/fonts/InstrumentSerif-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/InstrumentSerif-Italic.ttf',
+      weight: '400',
+      style: 'italic',
+    },
+  ],
+});
+
 export const NeueMontreal = localFont({
 	variable: '--font-neue-montreal',
 	src: [

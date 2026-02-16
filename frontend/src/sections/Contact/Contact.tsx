@@ -55,16 +55,15 @@ const Contact: React.FC = () => {
                 </Marquee>
 
                 <div className="contact-wrapper">
-                    <p className='h2'> My client-based work has received the attention of <Link href={'https://www.buzzfeednews.com/article/ryanmac/christopher-wylie-cambridge-analytica-scandal'} className='link'><span><Button variant='default' split={true}> Buzzfeed <i className='icon-akn icon-buzzfeed'></i></Button></span></Link>, <Link href={'https://www.theglobeandmail.com/politics/article-business-plan-hatched-by-christopher-wylie-sheds-light-on-whistle/'} className='link'><span><Button variant='default' split={true}>the Globe and Mail <i className='icon-akn icon-maple-leave'></i></Button></span></Link>,
-                        and Wallpaper* Magazine. </p>
-                    <p className='h3'>My freelance clients include Christopher Wylie
-                        (Cambridge Analytica), Citymapper, and UsTwo.</p>
-
+                    <p className='h2'> I design and build thoughtful digital and physical projects — turning ideas into things that delight . </p>
+                    <p className='h3'>With over a decade of experience, I’ve shipped work sold in national retailers, used by millions of people, and covered by major publications</p>
+<p className='h3'> Selected clients include Christopher Wylie (Cambridge Analytica), Citymapper, and ustwo. Work featured in The Globe and Mail, The Telegraph, The Times, Wallpaper*, and BuzzFeed.</p>
 
                     <Collapse>
 
                         <Collapse.Content>
-                            <p className='h3'>I&apos;ve just completed a 6 month intensive coding bootcamp with General Assembly (November 2021, wrapping up May 28th, 2022). I&apos;m proficient in React, Node.Js, ExpressJS, MongoDB, SQL (Postgres), Python, and Django. Whilst Ruby isn&apos;t on my list, I&apos;m personally quite interested in further development.</p>
+                            <p className='h3'>I was born and raised in beautiful Victoria, BC Canada, and have lived and worked in London, UK and Boston, before settling in Vancouver. I’m drawn to projects that require deep problem solving — work that requires structure, taste, and follow-through. I’ve led projects from early concept through production and launch, often working at the intersection of design, engineering, and commerce.
+</p>
                         </Collapse.Content>
                         <Collapse.Button>   <Button variant="secondary" icon="arrow-right" split={true} className="mt-5">
                             Read More

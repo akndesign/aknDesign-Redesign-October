@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Pacman.scss';
-import { useGSAP } from '@gsap/react';
+
 import { Observer } from 'gsap/Observer';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/all';
@@ -68,7 +68,7 @@ export const Pacman: React.FC = () => {
     }, [dot]);
 
 
-    useGSAP(() => {
+    useEffect(() => {
         gsap.registerPlugin(ScrollToPlugin);
         const section = document.querySelectorAll('[data-section]');
 

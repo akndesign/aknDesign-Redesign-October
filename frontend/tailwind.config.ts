@@ -25,7 +25,7 @@ const config: Config = {
 				'gtalpina-bold-italic': ['var(--font-gtalpina-bold-italic)'],
 				'gteesti-medium': ['var(--font-gteesti-medium)'],
 				'neuemontreal-medium': ['var(--font-neuemontreal-medium)'],
-				'roobert-medium': ['var(--font-roobert-medium)'],
+				'instrumental-serif': ['var(--font-instrument-serif)'],
 				'gtalpina-condensed-medium-italic': [
 					'var(--font-gtalpina-condensed-medium-italic)',
 				],

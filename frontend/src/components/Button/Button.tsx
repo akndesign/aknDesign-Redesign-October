@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import Magnetic from '@/components/Magnetic/Magnetic';
 import Link from 'next/link';
 import SplitType from 'split-type';
 import './Button.scss';
-import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 interface ButtonProps {
@@ -22,9 +21,9 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon, magnetic, className, submit, split, target }) => {
     const submitButton = submit ? 'submit' : 'button';
-    const ref = React.useRef<HTMLButtonElement | HTMLAnchorElement>(null);
+    const ref = useRef<HTMLButtonElement | HTMLAnchorElement>(null);
 
-    useGSAP(() => {
+    useEffect(() => {
         const element = ref.current;
 
         if (!split || !element) return;
@@ -34,23 +33,12 @@ const Button: React.FC<ButtonProps> = ({ variant, onClick, href, children, icon,
         });
 
         const handleMouseEnter = () => {
-            // gsap.to(splitTxt.chars, {
-            //     duration: 0.5,
-            //     y: () => gsap.utils.random(-5, 5),
-            //     x: () => gsap.utils.random(-3, 3),
-            //     rotation: () => gsap.utils.random(-10, 10),
-            //     ease: 'elastic.out(1, 0.3)',
-            // });
-            console.log('asi')
-
             gsap.to(splitTxt.chars, {
                 duration: 0.3,
                 yPercent: (index) => index % 2 === 0 ? -8 : 8,
                 rotation: (index) => index % 2 === 0 ? 4 : -4,
                 ease: 'power1.out',
-                
             });
-
         };
 
         const handleMouseLeave = () => {

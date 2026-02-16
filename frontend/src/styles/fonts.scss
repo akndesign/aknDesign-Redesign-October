@@ -1,4 +1,17 @@
 @font-face {
+	font-family: 'InstrumentSerif';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../../public/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'InstrumentSerif';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../../public/fonts/InstrumentSerif-Italic.ttf') format('truetype');
+}
+@font-face {
 	font-family: 'GTAlpinaTrial-MediumItalic';
 	font-style: italic;
 	font-weight: 500;
@@ -146,6 +159,7 @@
 	--font-reckless-light: 'Reckless-Light', sans-serif;
 	--font-reckless-light-italic: 'Reckless-Light-Italic', sans-serif;
 	--font-neuemontreal-regular: 'NeueMontreal-Regular', sans-serif;
+	--font-instrument-serif: 'InstrumentSerif', serif;
 }
 
 /**

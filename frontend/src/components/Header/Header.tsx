@@ -1,10 +1,10 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Logo } from '@/components/Logo/Logo';
 import Button from '@/components/Button/Button';
 import './Header.scss';
 import { Burger } from '../Burger/Burger';
-import { useGSAP } from '@gsap/react';
+
 import gsap from 'gsap';
 
 export const Header = () => {
@@ -66,7 +66,9 @@ export const Header = () => {
         return () => clearInterval(interval);
     }, []);
 
-    useGSAP(() => {
+    useEffect(() => {
+        if (!refSolar.current || !refTime.current) return;
+
         gsap.set(refSolar.current, { y: 100, opacity: 0 });
         gsap.set(refTime.current, { opacity: 0 });
 
@@ -77,11 +79,18 @@ export const Header = () => {
             },
         });
 
-        tl.fromTo(refSolar.current, { y: 100, duration: 3, opacity: 0, ease: 'elastic.out(1,0.5)' }, { y: 0, opacity: 1 }, 0)
-            .fromTo(refTime.current, { opacity: 0 }, { opacity: 1 }, 0);
-    }, {
-        scope: refSolar,
-    });
+        tl.fromTo(
+            refSolar.current,
+            { y: 100, opacity: 0, duration: 3, ease: 'elastic.out(1,0.5)' },
+            { y: 0, opacity: 1 },
+            0
+        ).fromTo(
+            refTime.current,
+            { opacity: 0 },
+            { opacity: 1 },
+            0
+        );
+    }, []);
 
     // Function to copy the email address to clipboard
     const [buttonText, setButtonText] = useState<string>('Ready to Hire');
@@ -126,10 +135,10 @@ export const Header = () => {
                                 <i className={`icon-akn ${iconClass}`}></i>
                             </span>
                         </li>
-                        <li><span>Seattle, WA, USA</span></li>
+                        <li><span>Vancouver, BC, Canada</span></li>
                         <li>
 
-                            <Button variant='default' split={true} onClick={copyToClipboard} className={`copy-email-button ${buttonAnimation}`} ><span className={`ready-to-hire`}>Ready to Hire</span><span className={`email-copied`}>Email COpied</span></Button>
+                            <Button variant='default' split={true} onClick={copyToClipboard} className={`copy-email-button ${buttonAnimation}`} ><span className={`ready-to-hire`}>Ready to Hire</span><span className={`email-copied`}>Email Copied</span></Button>
                             
                         </li>
                         <li><Burger /></li>

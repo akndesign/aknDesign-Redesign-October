@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 
-gsap.registerPlugin(useGSAP);
 interface MagneticProps {
     children: React.ReactNode;
 }

@@ -3,7 +3,7 @@ import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "Alexander Neumann",
-  description: "I'm Alexander Neumann,a designer and coder",
+  description: "I'm Alexander Neumann,a graphic designer and coder",
 };
 
 export default function RootLayout({
