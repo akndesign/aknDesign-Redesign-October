@@ -6,15 +6,40 @@
 		color: var(--color-azure);
 	}
 	.contact-wrapper {
-		padding: clamp-font(40, 160, 500, 1920) clamp-font(36, 240, 500, 1920);
 		display: flex;
 		flex-direction: column;
-		gap: clamp-font(24, 80, 500, 1920);
 		align-items: center;
+		text-align: left;
 
-		p {
-			color: var(--color-azure);
+		// updated vertical rhythm and padding
+		padding: clamp-font(56, 140, 375, 1920) clamp-font(24, 140, 375, 1920);
+		row-gap: clamp-font(20, 44, 375, 1920);
+
+		max-width: 1270px;
+		margin: 0 auto;
+	}
+
+	// keep everything in a single centered column
+	.contact-wrapper > p {
+	
+		margin: 0;
+	}
+
+	// button spacing, tighter than the old huge gaps
+	.contact-wrapper .mt-5 {
+		margin-top: clamp-font(18, 32, 375, 1920);
+	}
+
+	// small-screen polish: prevent the hero line from blowing up and reduce padding
+	@media (max-width: 480px) {
+		.contact-wrapper {
+			padding: clamp-font(40, 64, 375, 480) clamp-font(18, 24, 375, 480);
+			row-gap: clamp-font(16, 24, 375, 480);
 		}
+	}
+
+	p {
+		color: var(--color-azure);
 	}
 
 	.link {
@@ -25,4 +50,5 @@
 			display: contents;
 		}
 	}
+
 }

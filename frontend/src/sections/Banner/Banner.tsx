@@ -35,7 +35,7 @@ export const Banner: React.FC = () => {
                 controls={true}
             />
             <div className="banner-wrapper">
-                <h2>I&apos;m Alexander Neumann,<br /> a designer and coder</h2>
+                <h2>I&apos;m Alexander Neumann,<br /> a <i>designer</i> and coder</h2>
                 <h4>I examine joy, play <br />and discovery in client-led work</h4>
                 <Button variant="primary" icon="arrow-right" split={true} onClick={handleOnClick}>
                     Recent Work

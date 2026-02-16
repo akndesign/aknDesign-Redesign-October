@@ -135,10 +135,10 @@ export const Header = () => {
                                 <i className={`icon-akn ${iconClass}`}></i>
                             </span>
                         </li>
-                        <li><span>Vancouver, BC, Canada</span></li>
+                        <li><h6>Authorized to work in Canada & US</h6></li>
                         <li>
 
-                            <Button variant='default' split={true} onClick={copyToClipboard} className={`copy-email-button ${buttonAnimation}`} ><span className={`ready-to-hire`}>Ready to Hire</span><span className={`email-copied`}>Email Copied</span></Button>
+                            <Button variant='default' split={true} onClick={copyToClipboard} className={`copy-email-button ${buttonAnimation}`} ><span className={`ready-to-hire`}>Contact Alexander</span><span className={`email-copied`}>Email Copied</span></Button>
                             
                         </li>
                         <li><Burger /></li>

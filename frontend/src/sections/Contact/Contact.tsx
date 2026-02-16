@@ -1,4 +1,3 @@
-
 // import { Marquee } from '@/components/Marquee/Marquee';
 import Marquee from "react-fast-marquee";
 import React, { useEffect, useState } from 'react';
@@ -44,26 +43,26 @@ const Contact: React.FC = () => {
                         {
                             Array.from({ length: 20 }).map((_, i) => (
                                 <span className='title' key={`contact-${i}`}>
-                                    <span>CONTACT NOW</span>
+                                    <span>Contact <i>now</i> </span>
                                     <span>
                                         <Image src="/images/icon/paperplane.svg" alt="paperplane" width={38}
   height={48} className='icon' />
                                     </span>
-                                    <span>• ALEXANDER@AKNDESIGN.COM • </span>
+                                    <span>• alexander@akndesign.com • </span>
                                 </span>
                             ))
                         }</div>
                 </Marquee>
 
                 <div className="contact-wrapper">
-                    <p className='h2'> I design and build thoughtful digital and physical projects — turning <i>ideas</i> into things that <i>delight.</i></p>
-                    <p className='h3'>With over a decade of experience, I’ve shipped work sold in national retailers, used by millions of people, and covered by major publications</p>
-<p className='h3'> Selected clients include Christopher Wylie (Cambridge Analytica), Citymapper, and ustwo. Work featured in The Globe and Mail, The Telegraph, The Times, Wallpaper*, and BuzzFeed.</p>
+                    <p className='h2'>Turning ideas into things that <i>last</i></p>
+                    <p className='h3'>With over a decade of experience, I’ve shipped work sold in national retailers, used by millions of people, and covered by major publications.</p>
+                    <p className='h5'>Selected clients include Christopher Wylie (Cambridge Analytica), Citymapper, and ustwo. Work featured in <i>The Globe and Mail, The Telegraph, The Times, Wallpaper*,</i> and <i>BuzzFeed.</i></p>
 
                     <Collapse>
 
                         <Collapse.Content>
-                            <p className='h3'>I was born and raised in beautiful Victoria, BC Canada, and have lived and worked in London, UK and Boston, before settling in Vancouver. I’m drawn to projects that require deep problem solving — work that requires structure, taste, and follow-through. I’ve led projects from early concept through production and launch, often working at the intersection of design, engineering, and commerce.
+                            <p className='h5'>I was born and raised in beautiful Victoria, British Columbia, Canada, and have lived and worked in <i> London, </i>UK and <i>  Boston</i>, before settling in Vancouver. I’m drawn to projects that require deep problem solving — work that requires structure, taste, and follow-through. I’ve led projects from early concept through production and launch, often working at the intersection of design, engineering, and commerce.
 </p>
                         </Collapse.Content>
                         <Collapse.Button>   <Button variant="secondary" icon="arrow-right" split={true} className="mt-5">

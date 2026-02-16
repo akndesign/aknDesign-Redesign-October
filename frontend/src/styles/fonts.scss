@@ -11,133 +11,26 @@
 	font-weight: 400;
 	src: url('../../public/fonts/InstrumentSerif-Italic.ttf') format('truetype');
 }
-@font-face {
-	font-family: 'GTAlpinaTrial-MediumItalic';
-	font-style: italic;
-	font-weight: 500;
-	src: url('../../public/fonts/GT-Alpina-Standard-Medium-Italic-Trial.otf')
-		format('opentype');
-}
 
 @font-face {
-	font-family: 'Blogh';
-	font-weight: 400;
-	src: url('../../public/fonts/Blogh.otf') format('opentype');
+  font-family: 'InstrumentSans';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../../public/fonts/InstrumentSans-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Roobert-Regular';
-	font-weight: 300;
-	src: url('../../public/fonts/RoobertTRIAL-Regular.otf') format('opentype');
+  font-family: 'InstrumentSans';
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('../../public/fonts/InstrumentSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'GTAlpinaTrial-BoldItalic';
-	font-style: italic;
-	font-weight: 700;
-	src: url('../../public/fonts/GT-Alpina-Standard-Bold-Italic-Trial.otf')
-		format('opentype');
-}
-
-@font-face {
-	font-family: 'GTEestiDisplayTrial-Md';
-	font-weight: 500;
-	src: url('../../public/fonts/GT-Eesti-Display-Medium-Trial.otf')
-		format('opentype');
-}
-
-@font-face {
-	font-family: 'NeueMontreal-Medium';
-	font-weight: 500;
-	src: url('../../public/fonts/NeueMontreal-Medium.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'Roobert-Medium';
-	font-weight: 500;
-	src: url('../../public/fonts/RoobertTRIAL-Medium.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'GTAlpinaTrial-CondensedMediumItalic';
-	font-style: italic;
-	font-weight: 500;
-	src: url('../../public/fonts/GT-Alpina-Condensed-Medium-Italic-Trial.otf')
-		format('opentype');
-}
-
-@font-face {
-	font-family: 'Reckless-Light';
-	font-weight: 300;
-	src: url('../../public/fonts/RecklessTRIAL-Light.woff') format('woff');
-}
-
-//   @font-face {
-//     font-family: "Reckless-Light-Italic";
-//     font-weight: 300;
-//     src: url("../../public/fonts/RecklessTRIAL-LightItalic.woff") format("woff");
-//   }
-
-@font-face {
-	font-family: 'NeueMontreal-Regular';
-	font-weight: 400;
-	src: url('../../public/fonts/NeueMontreal-Regular.otf') format('opentype');
-}
-
-// FOR ICON
-@font-face {
-	font-family: 'icomoon';
-	src: url('../../public/fonts/icomoon.woff?vc085l') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
-}
-
-[class^='icon-akn'],
-[class*=' icon-akn-'] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: never;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-buzzfeed:before {
-	content: '\e900';
-}
-.icon-sun:before {
-	content: '\e901';
-}
-.icon-star-2:before {
-	content: '\e902';
-}
-.icon-phone:before {
-	content: '\e903';
-}
-.icon-oval:before {
-	content: '\e904';
-}
-.icon-moon:before {
-	content: '\e905';
-}
-.icon-maple-leave:before {
-	content: '\e906';
-}
-.icon-diagonal-arrow:before {
-	content: '\e907';
-}
-.icon-cursor-2:before {
-	content: '\e908';
-}
-.icon-cursor:before {
-	content: '\e909';
+  font-family: 'GeistMono';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../../public/fonts/GeistMono-VariableFont_wght.ttf') format('truetype');
 }
 
 /**
@@ -147,19 +40,9 @@
 **/
 
 :root {
-	--font-gtalpina-medium-italic: 'GTAlpinaTrial-MediumItalic', serif;
-	--font-blogh: 'Blogh', serif;
-	--font-roobert-regular: 'Roobert-Regular', sans-serif;
-	--font-gtalpina-bold-italic: 'GTAlpinaTrial-BoldItalic', serif;
-	--font-gteesti-medium: 'GTEestiDisplayTrial-Md', sans-serif;
-	--font-neuemontreal-medium: 'NeueMontreal-Medium', sans-serif;
-	--font-roobert-medium: 'Roobert-Medium', sans-serif;
-	--font-gtalpina-condensed-medium-italic: 'GTAlpinaTrial-CondensedMediumItalic',
-		serif;
-	--font-reckless-light: 'Reckless-Light', sans-serif;
-	--font-reckless-light-italic: 'Reckless-Light-Italic', sans-serif;
-	--font-neuemontreal-regular: 'NeueMontreal-Regular', sans-serif;
 	--font-instrument-serif: 'InstrumentSerif', serif;
+	--font-instrument-sans: 'InstrumentSans', sans-serif;
+	--font-geist-mono: 'GeistMono', monospace;
 }
 
 /**

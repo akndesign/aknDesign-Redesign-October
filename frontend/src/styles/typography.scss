@@ -15,14 +15,14 @@
 }
 
 .title {
-	font-family: var(--font-neue-montreal);
+	font-family: var(--font-instrument-serif);
 	font-size: clamp-font(28, 40, 500, 1920);
 	line-height: 1.1;
 }
 
 h1,
 .h1 {
-	font-family: var(--font-neue-montreal);
+	font-family: var(--font-instrument-serif);
 	font-weight: 400;
 	line-height: 1.2;
 	font-size: clamp-font(48, 82, 500, 1920);
@@ -39,20 +39,48 @@ h2,
 
 .h3,
 h3 {
-	font-family: var(--font-neue-montreal);
+	font-family: var(--font-instrument-sans);
 	font-weight: 300;
 	line-height: 1.2;
-	font-size: clamp-font(30, 48, 768, 1920);
+	font-size: clamp-font(12, 32, 768, 1920);
 }
 
 .h4,
 h4 {
-	font-family: var(--font-neue-montreal);
+	font-family: var(--font-geist-mono);
 	// font-size: var(--font-size-l);
-	font-size: clamp-font(23, 36, 768, 1920);
-
+	font-size: clamp-font(18, 24, 768, 1920);
 	font-weight: 400;
 	line-height: 1.2;
+}
+
+.h3,
+h3 {
+	font-family: var(--font-instrument-serif);
+	font-weight: 300;
+	line-height: 1.2;
+	font-size: clamp-font(18, 48, 768, 1920);
+}
+
+.h5,
+h5 {
+	font-family: var(--font-instrument-sans);
+	font-weight: 300;
+	line-height: 1.2;
+	font-size: clamp-font(18, 30, 768, 1920);
+}
+
+.h5 i,
+h5 i,
+.h5 em,
+h5 em {
+	font-family: var(--font-instrument-serif);
+	font-style: italic;
+}
+
+h6 {
+	font-family: var(--font-geist-mono);
+	font-size: clamp-font(20, 18, 768, 1920);
 }
 
 .link {

@@ -19,7 +19,7 @@ const Works: React.FC<WorksProps> = ({ data }) => {
                     <div className="marquee-inner">
                         {
                             Array.from({ length: 20 }).map((_, i) => (
-                                <span className='title' key={`recent-work-${i}`}>RECENT WORK • </span>
+                                <span className='title' key={`recent-work-${i}`}>Recent Projects • </span>
                             ))
                         }</div>
                 </Marquee>
