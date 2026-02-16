@@ -44,11 +44,12 @@ const Contact: React.FC = () => {
                         {
                             Array.from({ length: 20 }).map((_, i) => (
                                 <span className='title' key={`contact-${i}`}>
-                                    <span>CONTACT NOW  </span>
+                                    <span>CONTACT NOW</span>
                                     <span>
-                                        <Image src="/images/icon/paperplane.svg" alt="paperplane" width={72} height={87} className='icon' />
+                                        <Image src="/images/icon/paperplane.svg" alt="paperplane" width={38}
+  height={48} className='icon' />
                                     </span>
-                                    <span>ALEXANDER@AKNDESIGN.COM • </span>
+                                    <span>• ALEXANDER@AKNDESIGN.COM • </span>
                                 </span>
                             ))
                         }</div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 interface MagneticProps {
@@ -8,7 +8,7 @@ interface MagneticProps {
 const Magnetic: React.FC<MagneticProps> = ({ children }) => {
     const magnetic = useRef<HTMLDivElement>(null); // Specify the type here
 
-    useGSAP(() => {
+    useLayoutEffect(() => {
         if (!magnetic.current) return;
 
         const xTo = gsap.quickTo(magnetic.current, "x", { duration: 1, ease: "elastic.out(1, 0.3)" })
