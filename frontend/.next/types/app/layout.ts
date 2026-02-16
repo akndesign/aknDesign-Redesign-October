@@ -1,4 +1,4 @@
-// File: /Users/alexanderneumann/Desktop/aknDesign-Redesign-October-2022/aknDesign-ReDesign-October/frontend/src/app/layout.tsx
+// File: /Users/alexanderneumann/Desktop/aknDesign-Redesign-October-2022/aknDesign-ReDesign/frontend/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

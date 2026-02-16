@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
                 </Marquee>
 
                 <div className="contact-wrapper">
-                    <p className='h2'> I design and build thoughtful digital and physical projects — turning ideas into things that delight . </p>
+                    <p className='h2'> I design and build thoughtful digital and physical projects — turning <i>ideas</i> into things that <i>delight.</i></p>
                     <p className='h3'>With over a decade of experience, I’ve shipped work sold in national retailers, used by millions of people, and covered by major publications</p>
 <p className='h3'> Selected clients include Christopher Wylie (Cambridge Analytica), Citymapper, and ustwo. Work featured in The Globe and Mail, The Telegraph, The Times, Wallpaper*, and BuzzFeed.</p>
 

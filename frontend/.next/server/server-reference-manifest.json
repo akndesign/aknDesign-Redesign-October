@@ -1,8 +1,8 @@
 {
   "node": {
-    "d18884a29cb020926bca3dcc47296f9f8a81e723": {
+    "d6db1345e2a6ebc5175465001fc3e9891eeecb6f": {
       "workers": {
-        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Falexanderneumann%2FDesktop%2FaknDesign-Redesign-October-2022%2FaknDesign-ReDesign-October%2Ffrontend%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%22revalidateRootLayout%22%5D%5D%5D&__client_imported__=true!"
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Falexanderneumann%2FDesktop%2FaknDesign-Redesign-October-2022%2FaknDesign-ReDesign%2Ffrontend%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%22revalidateRootLayout%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
         "app/page": "action-browser"
@@ -10,5 +10,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "4klnZJovqApZRAEIuPUXd2QfPm2nU/ngLZnbYdrBw1c="
+  "encryptionKey": "i6HvXrfPLQjYvasgtYDK3RwHjAxQKJYTsi1tAc649cU="
 }
